@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python Programming Course – Emobility System Lab</title>
+  <meta name="description" content="Learn Python programming from basics to advanced with Emobility System Lab. Data science, automation and more."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.png" alt="Logo" class="logo-img"/>
+      <span class="logo-text">Emobility System Lab</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="teachers-hiring.html">Teachers Hiring</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="login.html" class="btn-outline">Login</a>
+      <a href="#" class="btn-primary btn-enroll-now" data-course-id="python-basics" data-price="5999">Enroll Now</a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="course-detail-hero" style="background: linear-gradient(135deg, #042f2e 0%, #0f766e 40%, #0f172a 100%);">
+  <div class="hero-inner">
+    <div>
+      <div class="course-breadcrumb"><a href="index.html">Home</a> / <a href="courses.html">Courses</a> / Python Programming</div>
+      <div class="course-badges">
+        <span class="course-badge badge-py">Python</span>
+        <span class="course-badge badge-ml">Data Science</span>
+      </div>
+      <h1>Python Programming<br/>From Basics to Advanced</h1>
+      <p class="course-desc">Master Python from the ground up — data structures, OOP, web automation, web scraping, REST APIs, data analysis with Pandas/NumPy, and advanced Python patterns used in industry.</p>
+      <div class="course-rating">
+        <span class="stars">★★★★★</span>
+        <strong style="color:white;">4.8</strong>
+        <span>(612 reviews)</span>
+        <span style="margin-left:8px;"><i class="fas fa-user-graduate"></i> 820+ Students</span>
+      </div>
+      <div style="margin-top:20px;color:rgba(255,255,255,0.65);font-size:14px;">
+        <i class="fas fa-user"></i> Created by <strong style="color:white;">Prof. Meena Sharma</strong> &nbsp;|&nbsp;
+        <i class="fas fa-calendar"></i> Updated February 2025 &nbsp;|&nbsp;
+        <i class="fas fa-language"></i> English / Hindi
+      </div>
+    </div>
+    <div>
+      <div class="enroll-card">
+        <div class="course-price">
+          <span class="price">5999 Rs.</span>
+          <span class="original">₹22,999</span>
+          <span class="discount">57% OFF</span>
+        </div>
+        <div style="background:#fefce8;border:1px solid #fde68a;border-radius:10px;padding:12px 16px;margin-bottom:20px;font-size:13px;color:#92400e;display:flex;align-items:center;gap:8px;">
+          <i class="fas fa-fire"></i> <strong>5 days</strong> left at this price!
+        </div>
+        <a href="#" class="btn-primary btn-full btn-enroll-now" data-course-id="python-basics" data-price="5999">Enroll Now</a>
+        <div class="enroll-includes">
+          <h5>This Course Includes</h5>
+          <ul>
+            <li><i class="fas fa-video"></i> 65+ hours of HD video lectures</li>
+            <li><i class="fas fa-code"></i> 15+ hands-on projects</li>
+            <li><i class="fas fa-infinity"></i> Lifetime access</li>
+            <li><i class="fas fa-certificate"></i> Industry certificate</li>
+            <li><i class="fas fa-headset"></i> Live doubt sessions</li>
+            <li><i class="fas fa-briefcase"></i> Placement assistance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="course-body-section">
+  <div class="container">
+    <div>
+      <div class="course-tabs">
+        <button class="course-tab-btn active" data-tab="py-overview">Overview</button>
+        <button class="course-tab-btn" data-tab="py-curriculum">Curriculum</button>
+        <button class="course-tab-btn" data-tab="lectures-tab">Lectures</button>
+        <button class="course-tab-btn" data-tab="assignments-tab">Assignments</button>
+        <button class="course-tab-btn" data-tab="tests-tab">Tests</button>
+        <button class="course-tab-btn" data-tab="notes-tab">Notes</button>
+        <button class="course-tab-btn" data-tab="dashboard-tab">Dashboard</button>
+        <button class="course-tab-btn" data-tab="py-instructor">Instructor</button>
+        <button class="course-tab-btn" data-tab="py-reviews">Reviews</button>
+      </div>
+      <div class="course-tab-panel active" id="py-overview">
+        <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:16px;">What You'll Learn</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:36px;">
+          <div class="who-for"><ul>
+            <li><i class="fas fa-check-circle"></i> Python syntax and core data types</li>
+            <li><i class="fas fa-check-circle"></i> Functions, modules, and packages</li>
+            <li><i class="fas fa-check-circle"></i> Object-Oriented Programming (OOP)</li>
+            <li><i class="fas fa-check-circle"></i> File handling and exception management</li>
+          </ul></div>
+          <div class="who-for"><ul>
+            <li><i class="fas fa-check-circle"></i> Web scraping with BeautifulSoup & Selenium</li>
+            <li><i class="fas fa-check-circle"></i> REST APIs with Flask and FastAPI</li>
+            <li><i class="fas fa-check-circle"></i> Data analysis with Pandas and NumPy</li>
+            <li><i class="fas fa-check-circle"></i> Automation scripts and tooling</li>
+          </ul></div>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:16px;">Who This Course Is For</h3>
+        <div class="who-for"><ul>
+          <li><i class="fas fa-user-check"></i> Absolute beginners with no programming experience</li>
+          <li><i class="fas fa-user-check"></i> Developers from other languages learning Python</li>
+          <li><i class="fas fa-user-check"></i> Students wanting data science and automation skills</li>
+          <li><i class="fas fa-user-check"></i> Professionals automating repetitive tasks</li>
+        </ul></div>
+      </div>
+      <div class="course-tab-panel" id="py-curriculum">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;"><h3 style="font-size:1.2rem;font-weight:700;">Course Content</h3><span style="font-size:13px;color:#64748b;">10 modules • 65+ lectures • 65 hours</span></div>
+        <div class="curriculum-module"><div class="module-header">Module 1: Python Fundamentals <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>Variables, data types, and operators</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Control flow: if/else, loops</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Lists, Tuples, Dicts, Sets</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 2: Functions & Functional Programming <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>Defining and calling functions</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Lambda, map, filter, reduce</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Decorators and generators</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 3: Object-Oriented Python <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>Classes and objects</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Inheritance and polymorphism</div><div class="lesson-item"><i class="fas fa-code"></i>Project: Bank Account System</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 4: Data Science with Python <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>NumPy arrays and operations</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Pandas DataFrames and analysis</div><div class="lesson-item"><i class="fas fa-code"></i>Project: Sales Analytics Dashboard</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 5: Web APIs & Automation <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>Building REST APIs with FastAPI</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Web scraping with Selenium</div><div class="lesson-item"><i class="fas fa-code"></i>Capstone: Automated News Aggregator</div></div></div>
+      </div>
+      <!-- NEW TABS -->
+      <div class="course-tab-panel" id="lectures-tab"></div>
+      <div class="course-tab-panel" id="assignments-tab"></div>
+      <div class="course-tab-panel" id="tests-tab"></div>
+      <div class="course-tab-panel" id="notes-tab"></div>
+      <div class="course-tab-panel" id="dashboard-tab"></div>
+
+      <div class="course-tab-panel" id="py-instructor">
+        <div class="instructor-card">
+          <div class="instructor-avatar">MS</div>
+          <div class="instructor-info">
+            <h4>Prof. Meena Sharma</h4>
+            <span class="role">Python & Data Science Educator | Industry Consultant</span>
+            <div style="display:flex;gap:16px;font-size:13px;color:#64748b;margin-bottom:12px;"><span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.8 Rating</span><span><i class="fas fa-users"></i> 2,100+ Students</span><span><i class="fas fa-book"></i> 4 Courses</span></div>
+            <p>Prof. Meena Sharma has 12+ years of industry and teaching experience in Python, data engineering, and automation. She has trained professionals at top MNCs and startups across India.</p>
+          </div>
+        </div>
+      </div>
+      <div class="course-tab-panel" id="py-reviews">
+        <div class="testimonial-card" style="margin-bottom:16px;"><div class="stars">★★★★★</div><p>"Best Python course out there. The projects are super practical — I used the skills immediately at my job. Worth every rupee!"</p><div class="testimonial-author"><div class="author-avatar">VM</div><div><strong>Vikram Mehta</strong><br/><small>Backend Developer</small></div></div></div>
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>"Prof. Meena's teaching style is exceptional. Concepts click immediately. The data science modules are gold."</p><div class="testimonial-author"><div class="author-avatar">SA</div><div><strong>Shreya Agarwal</strong><br/><small>Data Analyst</small></div></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="sidebar-card"><h4>Skills You'll Gain</h4><div><span class="skill-tag">Python 3</span><span class="skill-tag">OOP</span><span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span><span class="skill-tag">FastAPI</span><span class="skill-tag">Web Scraping</span><span class="skill-tag">Automation</span><span class="skill-tag">REST APIs</span><span class="skill-tag">Flask</span></div></div>
+      <div class="sidebar-card"><h4>Course Details</h4><ul style="display:flex;flex-direction:column;gap:14px;font-size:14px;"><li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-clock"></i> Duration</span><strong>3-4 months</strong></li><li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-signal"></i> Level</span><strong>All Levels</strong></li><li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-book"></i> Lessons</span><strong>65+ Lectures</strong></li><li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-certificate"></i> Certificate</span><strong>Yes</strong></li></ul></div>
+      <div class="sidebar-card"><h4>Related Courses</h4><div style="display:flex;flex-direction:column;gap:14px;"><a href="course-genai.html" style="display:flex;gap:12px;align-items:center;"><div style="width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,#4f46e5,#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-size:20px;"><i class="fas fa-brain"></i></div><div><div style="font-size:13px;font-weight:600;">Generative AI</div><div style="font-size:12px;color:#64748b;">5999 Rs.</div></div></a><a href="course-csms.html" style="display:flex;gap:12px;align-items:center;"><div style="width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,#7c3aed,#0d9488);display:flex;align-items:center;justify-content:center;color:white;font-size:20px;"><i class="fas fa-charging-station"></i></div><div><div style="font-size:13px;font-weight:600;">CSMS</div><div style="font-size:12px;color:#64748b;">5999 Rs.</div></div></a></div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-bottom" style="border-top:none;padding:32px 0;"><p>© 2025 Emobility System Lab. All Rights Reserved.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

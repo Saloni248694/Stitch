@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teachers Hiring – Emobility System Lab</title>
+  <meta name="description" content="Join our team of expert educators at Emobility System Lab."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.png" alt="Emobility System Lab Logo" class="logo-img"/>
+      <span class="logo-text">Emobility System Lab</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="teachers-hiring.html" class="active">Teachers Hiring</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="login.html" class="btn-outline">Login</a>
+      <a href="login.html#signup" class="btn-primary">Enroll Now</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div style="position:relative;z-index:1;">
+    <div class="section-badge" style="margin:0 auto 16px;">Join Our Team</div>
+    <h1>Become an <span class="gradient-text">Instructor</span></h1>
+    <p>Share your expertise in Smart Mobility, AI, and Embedded Systems with thousands of eager learners.</p>
+  </div>
+</div>
+
+<!-- HIRING SECTION -->
+<section class="contact-section" style="padding-top: 40px;">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Why Teach with Us?</h3>
+        <ul class="about-list" style="margin-top: 20px;">
+          <li><i class="fas fa-users"></i> Reach a global audience of dedicated students</li>
+          <li><i class="fas fa-wallet"></i> Competitive compensation and flexible hours</li>
+          <li><i class="fas fa-chalkboard-teacher"></i> Support from our instructional design team</li>
+          <li><i class="fas fa-network-wired"></i> Network with top industry professionals</li>
+        </ul>
+        <div style="margin-top: 40px;">
+          <h4>Current Openings</h4>
+          <p style="margin-top: 10px; color: #64748b;">- Senior GenAI Instructor<br>- Embedded Systems Trainer<br>- CSMS / OCPP Expert<br>- Python & Data Science Mentor</p>
+        </div>
+      </div>
+      
+      <!-- APPLICATION FORM -->
+      <form class="contact-form" onsubmit="handleHiringForm(event)">
+        <h3 style="margin-bottom: 20px;">Apply Now</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Your Name" required/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="your@email.com" required/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+91 0000000000" required/>
+          </div>
+          <div class="form-group">
+            <label for="expertise">Area of Expertise</label>
+            <select id="expertise" style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 8px; font-family: inherit; font-size: 15px; background: #f8fafc;" required>
+              <option value="">Select Domain</option>
+              <option value="genai">Generative AI</option>
+              <option value="python">Python Programming</option>
+              <option value="embedded">Embedded Systems</option>
+              <option value="csms">CSMS / EV</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="linkedin">LinkedIn Profile (or Portfolio) URL</label>
+          <input type="url" id="linkedin" placeholder="https://linkedin.com/in/..."/>
+        </div>
+        <div class="form-group">
+          <label for="experience">Share a brief summary of your teaching/industry experience</label>
+          <textarea id="experience" rows="5" placeholder="Your experience here..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full">Submit Application <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/logo.png" alt="Logo" class="logo-img" style="width:40px;height:40px;"/>
+          <span class="logo-text">Emobility System Lab</span>
+        </a>
+        <p>Innovating the Future of Smart Mobility. Empowering the next generation of technology professionals.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Our Courses</h4>
+        <ul>
+          <li><a href="course-genai.html">Generative AI</a></li>
+          <li><a href="course-python.html">Python Programming</a></li>
+          <li><a href="course-embedded.html">Embedded Systems</a></li>
+          <li><a href="course-csms.html">CSMS</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="fas fa-phone"></i> +91-7999346783</li>
+          <li><i class="fas fa-envelope"></i> hr@emobilitysystemslab.in</li>
+          <li><i class="fas fa-map-marker-alt"></i> Gwalior, MP, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Emobility System Lab. All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

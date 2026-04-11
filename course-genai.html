@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generative AI Course – Emobility System Lab</title>
+  <meta name="description" content="Master Generative AI, LLMs, and prompt engineering with Emobility System Lab's industry-focused GenAI course."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.png" alt="Logo" class="logo-img"/>
+      <span class="logo-text">Emobility System Lab</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="teachers-hiring.html">Teachers Hiring</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="login.html" class="btn-outline">Login</a>
+      <a href="#" class="btn-primary btn-enroll-now" data-course-id="gen-ai" data-price="5999">Enroll Now</a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- COURSE HERO -->
+<div class="course-detail-hero" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #0f172a 100%);">
+  <div class="hero-inner">
+    <div>
+      <div class="course-breadcrumb"><a href="index.html">Home</a> / <a href="courses.html">Courses</a> / Generative AI</div>
+      <div class="course-badges">
+        <span class="course-badge badge-ai">AI</span>
+        <span class="course-badge badge-ml">Machine Learning</span>
+      </div>
+      <h1>Generative AI (GenAI)<br/>Complete Masterclass</h1>
+      <p class="course-desc">Master Large Language Models, prompt engineering, RAG pipelines, AI agents, and build production-ready AI applications from scratch. Aligned with the latest industry standards.</p>
+      <div class="course-rating">
+        <span class="stars">★★★★★</span>
+        <strong style="color:white;">4.9</strong>
+        <span>(387 reviews)</span>
+        <span style="margin-left:8px;"><i class="fas fa-user-graduate"></i> 452 Students</span>
+      </div>
+      <div style="margin-top:20px;color:rgba(255,255,255,0.65);font-size:14px;">
+        <i class="fas fa-user"></i> Created by <strong style="color:white;">Dr. Sanjay Verma</strong> &nbsp;|&nbsp;
+        <i class="fas fa-calendar"></i> Updated March 2025 &nbsp;|&nbsp;
+        <i class="fas fa-language"></i> English / Hindi
+      </div>
+    </div>
+    <div>
+      <div class="enroll-card">
+        <div class="course-price">
+          <span class="price">5999 Rs.</span>
+          <span class="original">₹29,999</span>
+          <span class="discount">57% OFF</span>
+        </div>
+        <div style="background:#fefce8;border:1px solid #fde68a;border-radius:10px;padding:12px 16px;margin-bottom:20px;font-size:13px;color:#92400e;display:flex;align-items:center;gap:8px;">
+          <i class="fas fa-fire"></i> <strong>3 days</strong> left at this price!
+        </div>
+        <a href="#" class="btn-primary btn-full btn-enroll-now" data-course-id="gen-ai" data-price="5999">Enroll Now</a>
+        <div class="enroll-includes">
+          <h5>This Course Includes</h5>
+          <ul>
+            <li><i class="fas fa-video"></i> 80+ hours of HD video lectures</li>
+            <li><i class="fas fa-code"></i> 20+ real-world projects</li>
+            <li><i class="fas fa-infinity"></i> Lifetime access</li>
+            <li><i class="fas fa-certificate"></i> Industry certificate</li>
+            <li><i class="fas fa-headset"></i> Mentor support & doubt sessions</li>
+            <li><i class="fas fa-briefcase"></i> Placement assistance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COURSE BODY -->
+<section class="course-body-section">
+  <div class="container">
+    <div>
+      <div class="course-tabs">
+        <button class="course-tab-btn active" data-tab="overview-tab">Overview</button>
+        <button class="course-tab-btn" data-tab="curriculum-tab">Curriculum</button>
+        <button class="course-tab-btn" data-tab="lectures-tab">Lectures</button>
+        <button class="course-tab-btn" data-tab="assignments-tab">Assignments</button>
+        <button class="course-tab-btn" data-tab="tests-tab">Tests</button>
+        <button class="course-tab-btn" data-tab="notes-tab">Notes</button>
+        <button class="course-tab-btn" data-tab="dashboard-tab">Dashboard</button>
+        <button class="course-tab-btn" data-tab="instructor-tab">Instructor</button>
+        <button class="course-tab-btn" data-tab="reviews-tab">Reviews</button>
+      </div>
+
+      <!-- OVERVIEW -->
+      <div class="course-tab-panel active" id="overview-tab">
+        <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:16px;">What You'll Learn</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:36px;">
+          <div class="who-for"><ul>
+            <li><i class="fas fa-check-circle"></i> Fundamentals of Generative AI and LLMs</li>
+            <li><i class="fas fa-check-circle"></i> Advanced Prompt Engineering techniques</li>
+            <li><i class="fas fa-check-circle"></i> RAG (Retrieval Augmented Generation)</li>
+            <li><i class="fas fa-check-circle"></i> LangChain & LlamaIndex frameworks</li>
+          </ul></div>
+          <div class="who-for"><ul>
+            <li><i class="fas fa-check-circle"></i> Building AI Agents and Chatbots</li>
+            <li><i class="fas fa-check-circle"></i> Fine-tuning models with LoRA / QLoRA</li>
+            <li><i class="fas fa-check-circle"></i> Vector databases (Pinecone, Weaviate)</li>
+            <li><i class="fas fa-check-circle"></i> Deploying AI apps on cloud platforms</li>
+          </ul></div>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:16px;">Course Requirements</h3>
+        <div class="who-for" style="margin-bottom:36px;"><ul>
+          <li><i class="fas fa-dot-circle"></i> Basic Python programming knowledge</li>
+          <li><i class="fas fa-dot-circle"></i> Familiarity with command line tools</li>
+          <li><i class="fas fa-dot-circle"></i> A computer with internet access</li>
+          <li><i class="fas fa-dot-circle"></i> Enthusiasm to learn cutting-edge AI!</li>
+        </ul></div>
+        <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:16px;">Who This Course Is For</h3>
+        <div class="who-for"><ul>
+          <li><i class="fas fa-user-check"></i> Software developers who want to add AI to their skillset</li>
+          <li><i class="fas fa-user-check"></i> Data scientists wanting to transition to GenAI</li>
+          <li><i class="fas fa-user-check"></i> Entrepreneurs building AI-powered products</li>
+          <li><i class="fas fa-user-check"></i> Students and beginners passionate about AI</li>
+        </ul></div>
+      </div>
+
+      <!-- CURRICULUM -->
+      <div class="course-tab-panel" id="curriculum-tab">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;">
+          <h3 style="font-size:1.2rem;font-weight:700;">Course Content</h3>
+          <span style="font-size:13px;color:#64748b;">12 modules • 80+ lectures • 80 hours</span>
+        </div>
+        <div class="curriculum-module"><div class="module-header">Module 1: Introduction to Generative AI <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>What is Generative AI?</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Overview of LLMs — GPT, Claude, Gemini</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Transformer architecture explained</div><div class="lesson-item"><i class="fas fa-file-alt"></i>Module Quiz</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 2: Prompt Engineering <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>Zero-shot and Few-shot prompting</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Chain-of-Thought reasoning</div><div class="lesson-item"><i class="fas fa-play-circle"></i>System prompts and personas</div><div class="lesson-item"><i class="fas fa-code"></i>Hands-on Lab: Build a chatbot</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 3: LangChain Framework <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>LangChain setup and architecture</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Chains, Agents, and Tools</div><div class="lesson-item"><i class="fas fa-code"></i>Project: Q&A system over documents</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 4: RAG – Retrieval Augmented Generation <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>Introduction to vector embeddings</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Building a RAG pipeline from scratch</div><div class="lesson-item"><i class="fas fa-code"></i>Project: Enterprise Knowledge Bot</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 5: Fine-tuning & Deployment <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>LoRA & QLoRA fine-tuning guide</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Hugging Face ecosystem</div><div class="lesson-item"><i class="fas fa-code"></i>Capstone Project: Custom AI assistant</div></div></div>
+      </div>
+
+      <!-- NEW TABS -->
+      <div class="course-tab-panel" id="lectures-tab"></div>
+      <div class="course-tab-panel" id="assignments-tab"></div>
+      <div class="course-tab-panel" id="tests-tab"></div>
+      <div class="course-tab-panel" id="notes-tab"></div>
+      <div class="course-tab-panel" id="dashboard-tab"></div>
+
+      <!-- INSTRUCTOR -->
+      <div class="course-tab-panel" id="instructor-tab">
+        <div class="instructor-card">
+          <div class="instructor-avatar">SV</div>
+          <div class="instructor-info">
+            <h4>Dr. Sanjay Verma</h4>
+            <span class="role">Senior AI Research Engineer & Educator</span>
+            <div style="display:flex;gap:16px;font-size:13px;color:#64748b;margin-bottom:12px;">
+              <span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.9 Rating</span>
+              <span><i class="fas fa-users"></i> 1,200+ Students</span>
+              <span><i class="fas fa-book"></i> 3 Courses</span>
+            </div>
+            <p>Dr. Sanjay Verma is a Senior AI Engineer with 10+ years of experience at leading tech companies. He specializes in LLMs, computer vision, and deploying AI solutions at scale. He is passionate about making cutting-edge AI accessible to everyone.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- REVIEWS -->
+      <div class="course-tab-panel" id="reviews-tab">
+        <div style="display:flex;align-items:center;gap:40px;padding:24px;background:#f8fafc;border-radius:16px;margin-bottom:28px;">
+          <div style="text-align:center;"><div style="font-size:3.5rem;font-weight:800;color:#0f172a;">4.9</div><div style="color:#f59e0b;font-size:22px;">★★★★★</div><div style="font-size:13px;color:#64748b;">Course Rating</div></div>
+          <div style="flex:1;">
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <div style="display:flex;align-items:center;gap:10px;"><div style="height:8px;flex:1;background:#e2e8f0;border-radius:4px;overflow:hidden;"><div style="height:100%;width:90%;background:linear-gradient(90deg,#0d9488,#0ea5e9);border-radius:4px;"></div></div><span style="font-size:13px;width:30px;">90%</span></div>
+              <div style="display:flex;align-items:center;gap:10px;"><div style="height:8px;flex:1;background:#e2e8f0;border-radius:4px;overflow:hidden;"><div style="height:100%;width:7%;background:#0d9488;border-radius:4px;"></div></div><span style="font-size:13px;width:30px;">7%</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" style="margin-bottom:16px;">
+          <div class="stars">★★★★★</div>
+          <p>"This GenAI course is phenomenal! The RAG module alone was worth the entire price. I can now build production-grade AI applications."</p>
+          <div class="testimonial-author"><div class="author-avatar">PS</div><div><strong>Priya Sharma</strong><br/><small>Software Developer</small></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Dr. Sanjay explains complex concepts in simple terms. The hands-on labs make all the difference. Highly recommended!"</p>
+          <div class="testimonial-author"><div class="author-avatar">RK</div><div><strong>Rohan Kapoor</strong><br/><small>Data Scientist</small></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div>
+      <div class="sidebar-card">
+        <h4>Skills You'll Gain</h4>
+        <div>
+          <span class="skill-tag">LLMs</span><span class="skill-tag">Prompt Engineering</span>
+          <span class="skill-tag">LangChain</span><span class="skill-tag">RAG</span>
+          <span class="skill-tag">AI Agents</span><span class="skill-tag">Fine-tuning</span>
+          <span class="skill-tag">Vector DBs</span><span class="skill-tag">Python</span>
+          <span class="skill-tag">Hugging Face</span><span class="skill-tag">Cloud Deployment</span>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <h4>Course Details</h4>
+        <ul style="display:flex;flex-direction:column;gap:14px;font-size:14px;">
+          <li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-clock"></i> Duration</span><strong>3-4 months</strong></li>
+          <li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-signal"></i> Level</span><strong>Beginner–Advanced</strong></li>
+          <li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-book"></i> Lessons</span><strong>80+ Lectures</strong></li>
+          <li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-project-diagram"></i> Projects</span><strong>20+ Projects</strong></li>
+          <li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-language"></i> Language</span><strong>English / Hindi</strong></li>
+          <li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-certificate"></i> Certificate</span><strong>Yes</strong></li>
+        </ul>
+      </div>
+      <div class="sidebar-card">
+        <h4>Related Courses</h4>
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <a href="course-python.html" style="display:flex;gap:12px;align-items:center;"><div style="width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,#0d9488,#3b82f6);display:flex;align-items:center;justify-content:center;color:white;font-size:20px;"><i class="fab fa-python"></i></div><div><div style="font-size:13px;font-weight:600;">Python Programming</div><div style="font-size:12px;color:#64748b;">5999 Rs.</div></div></a>
+          <a href="course-embedded.html" style="display:flex;gap:12px;align-items:center;"><div style="width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,#ea580c,#f59e0b);display:flex;align-items:center;justify-content:center;color:white;font-size:20px;"><i class="fas fa-microchip"></i></div><div><div style="font-size:13px;font-weight:600;">Embedded Systems</div><div style="font-size:12px;color:#64748b;">5999 Rs.</div></div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding:32px 0;">
+      <p>© 2025 Emobility System Lab. All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

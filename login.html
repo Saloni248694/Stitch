@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login – Emobility System Lab</title>
+  <meta name="description" content="Login or sign up to access Emobility System Lab courses in GenAI, Python, Embedded Systems and CSMS."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<a href="index.html" class="back-home-btn" style="position:fixed;top:20px;left:20px;z-index:999;display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.7);font-size:14px;font-weight:600;transition:color 0.3s;">
+  <i class="fas fa-arrow-left"></i> Back to Home
+</a>
+
+<div class="auth-page">
+  <div class="auth-container">
+    <!-- LEFT PANEL -->
+    <div class="auth-left">
+      <div class="logo-row">
+        <img src="assets/logo.png" alt="Emobility Logo"/>
+        <span>Emobility System Lab</span>
+      </div>
+      <h2>Start Your Learning Journey Today</h2>
+      <p>Join thousands of students mastering the future of smart mobility, embedded systems, and AI technologies.</p>
+      <div class="auth-features">
+        <div class="auth-feature"><i class="fas fa-check-circle"></i><span>Industry-aligned curriculum</span></div>
+        <div class="auth-feature"><i class="fas fa-check-circle"></i><span>Hands-on practical projects</span></div>
+        <div class="auth-feature"><i class="fas fa-check-circle"></i><span>Expert instructors from industry</span></div>
+        <div class="auth-feature"><i class="fas fa-check-circle"></i><span>Lifetime access to course materials</span></div>
+        <div class="auth-feature"><i class="fas fa-check-circle"></i><span>Certificate upon completion</span></div>
+      </div>
+      <div style="margin-top:40px;padding:20px;background:rgba(255,255,255,0.1);border-radius:14px;backdrop-filter:blur(8px);">
+        <div style="display:flex;gap:16px;align-items:center;">
+          <div style="width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;font-weight:800;">AK</div>
+          <div>
+            <div style="font-weight:600;font-size:14px;">Arjun Kumar</div>
+            <div style="font-size:12px;opacity:0.75;">Embedded Systems Graduate</div>
+          </div>
+        </div>
+        <p style="margin-top:14px;font-size:13px;opacity:0.8;font-style:italic;">"Best decision of my career. Got placed within 3 months of completing the course!"</p>
+        <div style="color:#fde68a;margin-top:8px;">★★★★★</div>
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="auth-right">
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-target="login-panel">Sign In</button>
+        <button class="auth-tab" data-target="signup-panel">Sign Up</button>
+      </div>
+
+      <!-- LOGIN PANEL -->
+      <div class="auth-form-panel active" id="login-panel">
+        <div class="auth-form">
+          <h3>Welcome Back!</h3>
+          <p>Sign in to access your courses and continue learning.</p>
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="login-email">Email Address</label>
+              <div class="input-icon-wrap">
+                <i class="fas fa-envelope input-icon"></i>
+                <input type="email" id="login-email" placeholder="your@email.com" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <div class="input-icon-wrap">
+                <i class="fas fa-lock input-icon"></i>
+                <input type="password" id="login-password" placeholder="••••••••" required/>
+              </div>
+            </div>
+            <div class="forgot-link">
+              <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn-primary btn-full">Sign In <i class="fas fa-arrow-right"></i></button>
+          </form>
+          <div class="divider">or continue with</div>
+          <button class="google-btn" onclick="window.location.href='/api/auth/google'">
+            <img src="https://www.google.com/favicon.ico" alt="Google"/>
+            Continue with Google
+          </button>
+          <div class="auth-switch">
+            Don't have an account? <a href="#" onclick="document.querySelector('[data-target=signup-panel]').click();return false;">Sign up for free</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIGNUP PANEL -->
+      <div class="auth-form-panel" id="signup-panel">
+        <div class="auth-form">
+          <h3>Create Your Account</h3>
+          <p>Join 2500+ students already learning on our platform.</p>
+          <form id="signupForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <div class="input-icon-wrap">
+                  <i class="fas fa-user input-icon"></i>
+                  <input type="text" id="first-name" placeholder="First Name" required/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <div class="input-icon-wrap">
+                  <i class="fas fa-user input-icon"></i>
+                  <input type="text" id="last-name" placeholder="Last Name" required/>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="signup-email">Email Address</label>
+              <div class="input-icon-wrap">
+                <i class="fas fa-envelope input-icon"></i>
+                <input type="email" id="signup-email" placeholder="your@email.com" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <div class="input-icon-wrap">
+                <i class="fas fa-phone input-icon"></i>
+                <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="course-interest">Interested Course</label>
+              <div class="input-icon-wrap">
+                <i class="fas fa-graduation-cap input-icon"></i>
+                <select id="course-interest" style="width:100%;padding:12px 16px 12px 44px;border-radius:10px;border:1.5px solid #cbd5e1;font-family:inherit;font-size:14px;background:#f8fafc;color:#0f172a;outline:none;appearance:none;">
+                  <option value="">Select a course</option>
+                  <option>Generative AI (GenAI)</option>
+                  <option>Python Programming</option>
+                  <option>Embedded Systems</option>
+                  <option>CSMS – Charging Station Management</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="signup-password">Create Password</label>
+              <div class="input-icon-wrap">
+                <i class="fas fa-lock input-icon"></i>
+                <input type="password" id="signup-password" placeholder="Minimum 8 characters" required/>
+              </div>
+            </div>
+            <div style="margin-bottom:20px;font-size:12px;color:#64748b;">
+              By signing up you agree to our <a href="#" style="color:#0d9488;">Terms of Service</a> and <a href="#" style="color:#0d9488;">Privacy Policy</a>.
+            </div>
+            <button type="submit" class="btn-primary btn-full">Create Account <i class="fas fa-arrow-right"></i></button>
+          </form>
+          <div class="auth-switch" style="margin-top:16px;">
+            Already have an account? <a href="#" onclick="document.querySelector('[data-target=login-panel]').click();return false;">Sign in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

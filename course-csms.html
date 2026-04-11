@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSMS Course – Emobility System Lab</title>
+  <meta name="description" content="Master Charging Station Management System (CSMS), OCPP protocol, AC/DC EV chargers with Emobility System Lab."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.png" alt="Logo" class="logo-img"/>
+      <span class="logo-text">Emobility System Lab</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="teachers-hiring.html">Teachers Hiring</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="login.html" class="btn-outline">Login</a>
+      <a href="#" class="btn-primary btn-enroll-now" data-course-id="csms" data-price="5999">Enroll Now</a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="course-detail-hero" style="background: linear-gradient(135deg, #2e1065 0%, #4c1d95 40%, #0f172a 100%);">
+  <div class="hero-inner">
+    <div>
+      <div class="course-breadcrumb"><a href="index.html">Home</a> / <a href="courses.html">Courses</a> / CSMS</div>
+      <div class="course-badges">
+        <span class="course-badge badge-ev">EV</span>
+        <span class="course-badge badge-ev">OCPP</span>
+        <span class="course-badge badge-ev">Smart Charging</span>
+      </div>
+      <h1>CSMS – Charging Station<br/>Management System</h1>
+      <p class="course-desc">Become an expert in EV charging infrastructure — master OCPP 1.6/2.0.1, AC/DC fast chargers, smart energy management, backend CSMS development, and real-world charging station deployment.</p>
+      <div class="course-rating">
+        <span class="stars">★★★★★</span>
+        <strong style="color:white;">4.9</strong>
+        <span>(203 reviews)</span>
+        <span style="margin-left:8px;"><i class="fas fa-user-graduate"></i> 360+ Students</span>
+      </div>
+      <div style="margin-top:20px;color:rgba(255,255,255,0.65);font-size:14px;">
+        <i class="fas fa-user"></i> Created by <strong style="color:white;">Eng. Ankit Pathak</strong> &nbsp;|&nbsp;
+        <i class="fas fa-calendar"></i> Updated March 2025 &nbsp;|&nbsp;
+        <i class="fas fa-language"></i> English / Hindi
+      </div>
+    </div>
+    <div>
+      <div class="enroll-card">
+        <div class="course-price">
+          <span class="price">5999 Rs.</span>
+          <span class="original">₹32,999</span>
+          <span class="discount">55% OFF</span>
+        </div>
+        <div style="background:#fefce8;border:1px solid #fde68a;border-radius:10px;padding:12px 16px;margin-bottom:20px;font-size:13px;color:#92400e;display:flex;align-items:center;gap:8px;">
+          <i class="fas fa-bolt"></i> India's #1 EV Charging course!
+        </div>
+        <a href="#" class="btn-primary btn-full btn-enroll-now" data-course-id="csms" data-price="5999">Enroll Now</a>
+        <div class="enroll-includes">
+          <h5>This Course Includes</h5>
+          <ul>
+            <li><i class="fas fa-video"></i> 90+ hours of HD video lectures</li>
+            <li><i class="fas fa-charging-station"></i> Access to EV charging lab</li>
+            <li><i class="fas fa-infinity"></i> Lifetime access</li>
+            <li><i class="fas fa-certificate"></i> Industry certificate</li>
+            <li><i class="fas fa-headset"></i> Expert doubt sessions</li>
+            <li><i class="fas fa-briefcase"></i> Placement assistance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="course-body-section">
+  <div class="container">
+    <div>
+      <div class="course-tabs">
+        <button class="course-tab-btn active" data-tab="csms-overview">Overview</button>
+        <button class="course-tab-btn" data-tab="csms-curriculum">Curriculum</button>
+        <button class="course-tab-btn" data-tab="lectures-tab">Lectures</button>
+        <button class="course-tab-btn" data-tab="assignments-tab">Assignments</button>
+        <button class="course-tab-btn" data-tab="tests-tab">Tests</button>
+        <button class="course-tab-btn" data-tab="notes-tab">Notes</button>
+        <button class="course-tab-btn" data-tab="dashboard-tab">Dashboard</button>
+        <button class="course-tab-btn" data-tab="csms-instructor">Instructor</button>
+        <button class="course-tab-btn" data-tab="csms-reviews">Reviews</button>
+      </div>
+      <div class="course-tab-panel active" id="csms-overview">
+        <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:16px;">What You'll Learn</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:36px;">
+          <div class="who-for"><ul>
+            <li><i class="fas fa-check-circle"></i> EV ecosystem and smart charging fundamentals</li>
+            <li><i class="fas fa-check-circle"></i> OCPP 1.6 J and OCPP 2.0.1 protocol</li>
+            <li><i class="fas fa-check-circle"></i> AC Level 1/2 and DC fast charger design</li>
+            <li><i class="fas fa-check-circle"></i> CSMS backend development (Python/Node.js)</li>
+          </ul></div>
+          <div class="who-for"><ul>
+            <li><i class="fas fa-check-circle"></i> Smart energy management and load balancing</li>
+            <li><i class="fas fa-check-circle"></i> ISO 15118 Vehicle-to-Grid (V2G)</li>
+            <li><i class="fas fa-check-circle"></i> OCPI and open roaming protocols</li>
+            <li><i class="fas fa-check-circle"></i> Charging station hardware commissioning</li>
+          </ul></div>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:16px;">Who This Course Is For</h3>
+        <div class="who-for"><ul>
+          <li><i class="fas fa-user-check"></i> Electrical and Electronics engineers entering EV sector</li>
+          <li><i class="fas fa-user-check"></i> Software developers building EV charging platforms</li>
+          <li><i class="fas fa-user-check"></i> EV charging startup founders and product managers</li>
+          <li><i class="fas fa-user-check"></i> Embedded engineers working on charging hardware</li>
+        </ul></div>
+      </div>
+      <div class="course-tab-panel" id="csms-curriculum">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;"><h3 style="font-size:1.2rem;font-weight:700;">Course Content</h3><span style="font-size:13px;color:#64748b;">14 modules • 90+ lectures • 90 hours</span></div>
+        <div class="curriculum-module"><div class="module-header">Module 1: EV Ecosystem Overview <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>EV market landscape in India & globally</div><div class="lesson-item"><i class="fas fa-play-circle"></i>EV battery technology and BMS</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Charging levels: AC vs DC</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 2: OCPP Protocol Mastery <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>OCPP 1.6 J architecture and messages</div><div class="lesson-item"><i class="fas fa-play-circle"></i>OCPP 2.0.1 upgrades and new features</div><div class="lesson-item"><i class="fas fa-code"></i>Lab: Simulate OCPP transactions</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 3: CSMS Backend Development <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>Building a CSMS server with Python</div><div class="lesson-item"><i class="fas fa-play-circle"></i>WebSocket communication with chargers</div><div class="lesson-item"><i class="fas fa-code"></i>Project: Full CSMS dashboard</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 4: Smart Charging & Energy Management <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>Dynamic load balancing algorithms</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Solar integration and V2G concepts</div><div class="lesson-item"><i class="fas fa-code"></i>Project: Smart charging fleet management</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 5: Hardware & Commissioning <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>AC charger hardware design</div><div class="lesson-item"><i class="fas fa-play-circle"></i>DC fast charger components</div><div class="lesson-item"><i class="fas fa-code"></i>Capstone: Deploy a real charging station</div></div></div>
+      </div>
+      <!-- NEW TABS -->
+      <div class="course-tab-panel" id="lectures-tab"></div>
+      <div class="course-tab-panel" id="assignments-tab"></div>
+      <div class="course-tab-panel" id="tests-tab"></div>
+      <div class="course-tab-panel" id="notes-tab"></div>
+      <div class="course-tab-panel" id="dashboard-tab"></div>
+
+      <div class="course-tab-panel" id="csms-instructor">
+        <div class="instructor-card">
+          <div class="instructor-avatar">AP</div>
+          <div class="instructor-info">
+            <h4>Eng. Ankit Pathak</h4>
+            <span class="role">EV Charging Expert | OCPP Certified Developer</span>
+            <div style="display:flex;gap:16px;font-size:13px;color:#64748b;margin-bottom:12px;"><span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.9 Rating</span><span><i class="fas fa-users"></i> 800+ Students</span><span><i class="fas fa-book"></i> 2 Courses</span></div>
+            <p>Ankit is a former EV charging architect at Tata Power and Exicom. He has designed CSMS platforms handling 50,000+ charging sessions daily. One of India's leading voices in EV charging technology education.</p>
+          </div>
+        </div>
+      </div>
+      <div class="course-tab-panel" id="csms-reviews">
+        <div class="testimonial-card" style="margin-bottom:16px;"><div class="stars">★★★★★</div><p>"This course is India's best resource for CSMS/OCPP. I joined an EV startup right after completing it. The practical CSMS project was especially valuable."</p><div class="testimonial-author"><div class="author-avatar">RM</div><div><strong>Rahul Mishra</strong><br/><small>EV Charging Engineer, Tata Power</small></div></div></div>
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>"Ankit sir has first-hand industry experience that shows in every module. The OCPP 2.0.1 content alone is worth 10x the course fee!"</p><div class="testimonial-author"><div class="author-avatar">DJ</div><div><strong>Divya Jain</strong><br/><small>EV Infrastructure Consultant</small></div></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="sidebar-card"><h4>Skills You'll Gain</h4><div><span class="skill-tag">OCPP 1.6</span><span class="skill-tag">OCPP 2.0.1</span><span class="skill-tag">CSMS Dev</span><span class="skill-tag">WebSocket</span><span class="skill-tag">ISO 15118</span><span class="skill-tag">Smart Charging</span><span class="skill-tag">EV Hardware</span><span class="skill-tag">V2G</span><span class="skill-tag">Python</span></div></div>
+      <div class="sidebar-card"><h4>Course Details</h4><ul style="display:flex;flex-direction:column;gap:14px;font-size:14px;"><li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-clock"></i> Duration</span><strong>3-4 months</strong></li><li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-signal"></i> Level</span><strong>Intermediate–Advanced</strong></li><li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-book"></i> Lessons</span><strong>90+ Lectures</strong></li><li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-charging-station"></i> Lab Access</span><strong>EV Charging Lab</strong></li><li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-certificate"></i> Certificate</span><strong>Yes</strong></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-bottom" style="border-top:none;padding:32px 0;"><p>© 2025 Emobility System Lab. All Rights Reserved.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

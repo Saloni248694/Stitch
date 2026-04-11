@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Embedded Systems Course – Emobility System Lab</title>
+  <meta name="description" content="Master Embedded Systems with microcontrollers, RTOS, CAN Bus, and hands-on hardware at Emobility System Lab."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.png" alt="Logo" class="logo-img"/>
+      <span class="logo-text">Emobility System Lab</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="teachers-hiring.html">Teachers Hiring</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="login.html" class="btn-outline">Login</a>
+      <a href="#" class="btn-primary btn-enroll-now" data-course-id="embedded-systems" data-price="5999">Enroll Now</a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="course-detail-hero" style="background: linear-gradient(135deg, #431407 0%, #c2410c 40%, #0f172a 100%);">
+  <div class="hero-inner">
+    <div>
+      <div class="course-breadcrumb"><a href="index.html">Home</a> / <a href="courses.html">Courses</a> / Embedded Systems</div>
+      <div class="course-badges">
+        <span class="course-badge badge-hw">Embedded</span>
+        <span class="course-badge badge-hw">IoT</span>
+        <span class="course-badge badge-hw">Hardware</span>
+      </div>
+      <h1>Master Embedded Systems<br/>Complete Professional Course</h1>
+      <p class="course-desc">Deep-dive into microcontroller programming, RTOS, CAN Bus, SPI, I2C, UART, PWM and real hardware projects used in automotive and industrial applications. Aligned with AUTOSAR standards.</p>
+      <div class="course-rating">
+        <span class="stars">★★★★★</span>
+        <strong style="color:white;">4.9</strong>
+        <span>(498 reviews)</span>
+        <span style="margin-left:8px;"><i class="fas fa-user-graduate"></i> 625+ Students</span>
+      </div>
+      <div style="margin-top:20px;color:rgba(255,255,255,0.65);font-size:14px;">
+        <i class="fas fa-user"></i> Created by <strong style="color:white;">Eng. Rajesh Gupta</strong> &nbsp;|&nbsp;
+        <i class="fas fa-calendar"></i> Updated March 2025 &nbsp;|&nbsp;
+        <i class="fas fa-language"></i> English / Hindi
+      </div>
+    </div>
+    <div>
+      <div class="enroll-card">
+        <div class="course-price">
+          <span class="price">5999 Rs.</span>
+          <span class="original">₹34,999</span>
+          <span class="discount">54% OFF</span>
+        </div>
+        <div style="background:#fefce8;border:1px solid #fde68a;border-radius:10px;padding:12px 16px;margin-bottom:20px;font-size:13px;color:#92400e;display:flex;align-items:center;gap:8px;">
+          <i class="fas fa-fire"></i> Most popular course — limited seats!
+        </div>
+        <a href="#" class="btn-primary btn-full btn-enroll-now" data-course-id="embedded-systems" data-price="5999">Enroll Now</a>
+        <div class="enroll-includes">
+          <h5>This Course Includes</h5>
+          <ul>
+            <li><i class="fas fa-video"></i> 100+ hours of HD video lectures</li>
+            <li><i class="fas fa-microchip"></i> Real hardware kit included</li>
+            <li><i class="fas fa-infinity"></i> Lifetime access</li>
+            <li><i class="fas fa-certificate"></i> Industry certificate</li>
+            <li><i class="fas fa-headset"></i> Mentor 1:1 sessions</li>
+            <li><i class="fas fa-briefcase"></i> Placement assistance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="course-body-section">
+  <div class="container">
+    <div>
+      <div class="course-tabs">
+        <button class="course-tab-btn active" data-tab="emb-overview">Overview</button>
+        <button class="course-tab-btn" data-tab="emb-curriculum">Curriculum</button>
+        <button class="course-tab-btn" data-tab="lectures-tab">Lectures</button>
+        <button class="course-tab-btn" data-tab="assignments-tab">Assignments</button>
+        <button class="course-tab-btn" data-tab="tests-tab">Tests</button>
+        <button class="course-tab-btn" data-tab="notes-tab">Notes</button>
+        <button class="course-tab-btn" data-tab="dashboard-tab">Dashboard</button>
+        <button class="course-tab-btn" data-tab="emb-instructor">Instructor</button>
+        <button class="course-tab-btn" data-tab="emb-reviews">Reviews</button>
+      </div>
+      <div class="course-tab-panel active" id="emb-overview">
+        <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:16px;">What You'll Learn</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:36px;">
+          <div class="who-for"><ul>
+            <li><i class="fas fa-check-circle"></i> Microcontroller architecture (ARM Cortex M)</li>
+            <li><i class="fas fa-check-circle"></i> Embedded C and C++ programming</li>
+            <li><i class="fas fa-check-circle"></i> RTOS concepts (FreeRTOS)</li>
+            <li><i class="fas fa-check-circle"></i> SPI, I2C, UART, CAN protocols</li>
+          </ul></div>
+          <div class="who-for"><ul>
+            <li><i class="fas fa-check-circle"></i> PWM, Timer, ADC/DAC peripherals</li>
+            <li><i class="fas fa-check-circle"></i> Automotive AUTOSAR architecture</li>
+            <li><i class="fas fa-check-circle"></i> IoT sensors and actuator interfacing</li>
+            <li><i class="fas fa-check-circle"></i> PCB design basics and debugging</li>
+          </ul></div>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:16px;">Who This Course Is For</h3>
+        <div class="who-for"><ul>
+          <li><i class="fas fa-user-check"></i> Electronics / ECE / EEE graduates</li>
+          <li><i class="fas fa-user-check"></i> Firmware engineers wanting to upskill</li>
+          <li><i class="fas fa-user-check"></i> Automotive engineers entering embedded space</li>
+          <li><i class="fas fa-user-check"></i> Hobbyists and makers building IoT projects</li>
+        </ul></div>
+      </div>
+      <div class="course-tab-panel" id="emb-curriculum">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;"><h3 style="font-size:1.2rem;font-weight:700;">Course Content</h3><span style="font-size:13px;color:#64748b;">16 modules • 100+ lectures • 100 hours</span></div>
+        <div class="curriculum-module"><div class="module-header">Module 1: Embedded Systems Fundamentals <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>Introduction to embedded systems</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Microcontroller vs microprocessor</div><div class="lesson-item"><i class="fas fa-play-circle"></i>ARM Cortex-M architecture deep dive</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 2: Embedded C Programming <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>Memory layout and pointers</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Bit manipulation and registers</div><div class="lesson-item"><i class="fas fa-code"></i>Lab: LED blink project on STM32</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 3: Communication Protocols <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>UART serial communication</div><div class="lesson-item"><i class="fas fa-play-circle"></i>SPI and I2C bus protocols</div><div class="lesson-item"><i class="fas fa-play-circle"></i>CAN Bus and automotive networks</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 4: RTOS with FreeRTOS <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>Tasks, schedulers and priorities</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Semaphores, mutexes, and queues</div><div class="lesson-item"><i class="fas fa-code"></i>Project: Multi-sensor dashboard</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 5: Automotive & AUTOSAR <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>AUTOSAR architecture overview</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Diagnostic protocols (UDS, OBD-II)</div><div class="lesson-item"><i class="fas fa-code"></i>Capstone: EV Battery Monitor System</div></div></div>
+      </div>
+      <!-- NEW TABS -->
+      <div class="course-tab-panel" id="lectures-tab"></div>
+      <div class="course-tab-panel" id="assignments-tab"></div>
+      <div class="course-tab-panel" id="tests-tab"></div>
+      <div class="course-tab-panel" id="notes-tab"></div>
+      <div class="course-tab-panel" id="dashboard-tab"></div>
+
+      <div class="course-tab-panel" id="emb-instructor">
+        <div class="instructor-card">
+          <div class="instructor-avatar">RG</div>
+          <div class="instructor-info">
+            <h4>Eng. Rajesh Gupta</h4>
+            <span class="role">Senior Embedded Systems Engineer | AUTOSAR Expert</span>
+            <div style="display:flex;gap:16px;font-size:13px;color:#64748b;margin-bottom:12px;"><span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.9 Rating</span><span><i class="fas fa-users"></i> 1,800+ Students</span><span><i class="fas fa-book"></i> 5 Courses</span></div>
+            <p>Rajesh has 15+ years in automotive embedded development at Bosch, Continental, and Tata Elxsi. He specializes in AUTOSAR, CAN stacks, and ARM-based development. Passionate about training the next generation of embedded engineers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="course-tab-panel" id="emb-reviews">
+        <div class="testimonial-card" style="margin-bottom:16px;"><div class="stars">★★★★★</div><p>"This is by far the best embedded systems course available. Hands-on approach with real hardware is phenomenal. Got placed at Bosch after completing this course!"</p><div class="testimonial-author"><div class="author-avatar">AK</div><div><strong>Arjun Kumar</strong><br/><small>Embedded Systems Engineer, Bosch</small></div></div></div>
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>"The CAN Bus module finally made everything click for me. Rajesh sir is an excellent teacher who explains everything very practically."</p><div class="testimonial-author"><div class="author-avatar">NT</div><div><strong>Neha Tiwari</strong><br/><small>Firmware Developer</small></div></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="sidebar-card"><h4>Skills You'll Gain</h4><div><span class="skill-tag">Embedded C</span><span class="skill-tag">ARM Cortex-M</span><span class="skill-tag">FreeRTOS</span><span class="skill-tag">CAN Bus</span><span class="skill-tag">SPI/I2C</span><span class="skill-tag">AUTOSAR</span><span class="skill-tag">STM32</span><span class="skill-tag">IoT</span><span class="skill-tag">PCB Design</span></div></div>
+      <div class="sidebar-card"><h4>Course Details</h4><ul style="display:flex;flex-direction:column;gap:14px;font-size:14px;"><li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-clock"></i> Duration</span><strong>3-4 months</strong></li><li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-signal"></i> Level</span><strong>Intermediate–Advanced</strong></li><li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-book"></i> Lessons</span><strong>100+ Lectures</strong></li><li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-microchip"></i> Hardware Kit</span><strong>Included</strong></li><li style="display:flex;justify-content:space-between;"><span style="color:#64748b;"><i class="fas fa-certificate"></i> Certificate</span><strong>Yes</strong></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-bottom" style="border-top:none;padding:32px 0;"><p>© 2025 Emobility System Lab. All Rights Reserved.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

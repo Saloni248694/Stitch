@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>C Programming Course – Emobility System Lab</title>
+  <meta name="description" content="Master C programming from the ground up with Emobility System Lab. Foundations of computer science and embedded systems."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.png" alt="Logo" class="logo-img"/>
+      <span class="logo-text">Emobility System Lab</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="teachers-hiring.html">Teachers Hiring</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="login.html" class="btn-outline">Login</a>
+      <a href="#" class="btn-primary btn-enroll-now" data-course-id="c-lang" data-price="1">Enroll Now</a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="course-detail-hero" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 40%, #0f172a 100%);">
+  <div class="hero-inner">
+    <div>
+      <div class="course-breadcrumb"><a href="index.html">Home</a> / <a href="courses.html">Courses</a> / C Programming</div>
+      <div class="course-badges">
+        <span class="course-badge badge-py" style="background:#2563eb;">C Programming</span>
+        <span class="course-badge badge-ml" style="background:#1e40af;">Foundations</span>
+      </div>
+      <h1>C Programming<br/>Master the Foundations</h1>
+      <p class="course-desc">Start your journey with the "Mother of all languages". Master memory management, pointers, and data structures — the bedrock of high-performance coding and embedded systems.</p>
+      <div class="course-rating">
+        <span class="stars">★★★★★</span>
+        <strong style="color:white;">4.9</strong>
+        <span>(245 reviews)</span>
+        <span style="margin-left:8px;"><i class="fas fa-user-graduate"></i> 450+ Students</span>
+      </div>
+      <div style="margin-top:20px;color:rgba(255,255,255,0.65);font-size:14px;">
+        <i class="fas fa-user"></i> Created by <strong style="color:white;">Dr. Rajesh Khanna</strong> &nbsp;|&nbsp;
+        <i class="fas fa-calendar"></i> Updated March 2025 &nbsp;|&nbsp;
+        <i class="fas fa-language"></i> English / Hindi
+      </div>
+    </div>
+    <div>
+      <div class="enroll-card">
+        <div class="course-price">
+          <span class="price">1 Rs.</span>
+          <span class="original">₹14,999</span>
+          <span class="discount">99% OFF</span>
+        </div>
+        <div style="background:#fefce8;border:1px solid #fde68a;border-radius:10px;padding:12px 16px;margin-bottom:20px;font-size:13px;color:#92400e;display:flex;align-items:center;gap:8px;">
+          <i class="fas fa-fire"></i> <strong>Special Test Price</strong>
+        </div>
+        <a href="#" class="btn-primary btn-full btn-enroll-now" data-course-id="c-lang" data-price="1">Enroll Now</a>
+        <div class="enroll-includes">
+          <h5>This Course Includes</h5>
+          <ul>
+            <li><i class="fas fa-video"></i> 45+ hours of HD video lectures</li>
+            <li><i class="fas fa-code"></i> 20+ coding challenges</li>
+            <li><i class="fas fa-infinity"></i> Lifetime access</li>
+            <li><i class="fas fa-certificate"></i> Verified certificate</li>
+            <li><i class="fas fa-headset"></i> Live doubt support</li>
+            <li><i class="fas fa-briefcase"></i> Testing credentials</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="course-body-section">
+  <div class="container">
+    <div>
+      <div class="course-tabs">
+        <button class="course-tab-btn active" data-tab="c-overview">Overview</button>
+        <button class="course-tab-btn" data-tab="c-curriculum">Curriculum</button>
+        <button class="course-tab-btn" data-tab="lectures-tab">Lectures</button>
+        <button class="course-tab-btn" data-tab="assignments-tab">Assignments</button>
+        <button class="course-tab-btn" data-tab="tests-tab">Tests</button>
+        <button class="course-tab-btn" data-tab="notes-tab">Notes</button>
+        <button class="course-tab-btn" data-tab="dashboard-tab">Dashboard</button>
+        <button class="course-tab-btn" data-tab="c-instructor">Instructor</button>
+        <button class="course-tab-btn" data-tab="c-reviews">Reviews</button>
+      </div>
+      <div class="course-tab-panel active" id="c-overview">
+        <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:16px;">What You'll Learn</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:36px;">
+          <div class="who-for"><ul>
+            <li><i class="fas fa-check-circle"></i> C Syntax and logic building</li>
+            <li><i class="fas fa-check-circle"></i> Arrays and memory allocation</li>
+            <li><i class="fas fa-check-circle"></i> Master Pointers and dynamic memory</li>
+            <li><i class="fas fa-check-circle"></i> File Handling and Binary data</li>
+          </ul></div>
+          <div class="who-for"><ul>
+            <li><i class="fas fa-check-circle"></i> Structs, Enums, and Typedefs</li>
+            <li><i class="fas fa-check-circle"></i> Linked Lists, Stacks, and Queues</li>
+            <li><i class="fas fa-check-circle"></i> Multi-threading in C</li>
+            <li><i class="fas fa-check-circle"></i> Embedded system foundations</li>
+          </ul></div>
+        </div>
+      </div>
+      <div class="course-tab-panel" id="c-curriculum">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;"><h3 style="font-size:1.2rem;font-weight:700;">Course Content</h3><span style="font-size:13px;color:#64748b;">8 modules • 45+ lectures • 45 hours</span></div>
+        <div class="curriculum-module"><div class="module-header">Module 1: Introduction to C <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>Compiling and executing C</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Datatypes and Operators</div></div></div>
+        <div class="curriculum-module"><div class="module-header">Module 2: Pointers & Memory <i class="fas fa-chevron-down acc-icon" style="transition:0.3s;"></i></div><div class="module-lessons"><div class="lesson-item"><i class="fas fa-play-circle"></i>Understanding Memory Addresses</div><div class="lesson-item"><i class="fas fa-play-circle"></i>Dynamic Memory (malloc/free)</div></div></div>
+      </div>
+      <!-- NEW TABS -->
+      <div class="course-tab-panel" id="lectures-tab"></div>
+      <div class="course-tab-panel" id="assignments-tab"></div>
+      <div class="course-tab-panel" id="tests-tab"></div>
+      <div class="course-tab-panel" id="notes-tab"></div>
+      <div class="course-tab-panel" id="dashboard-tab"></div>
+
+      <div class="course-tab-panel" id="c-instructor">
+        <div class="instructor-card">
+          <div class="instructor-avatar">RK</div>
+          <div class="instructor-info">
+            <h4>Dr. Rajesh Khanna</h4>
+            <span class="role">Computer Science Professor | Systems Expert</span>
+            <p>Dr. Khanna has mentored thousands of students in low-level systems programming and operating systems designs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="course-tab-panel" id="c-reviews">
+        <div class="testimonial-card" style="margin-bottom:16px;"><div class="stars">★★★★★</div><p>"Perfect for understanding how computers actually work. The ₹1 test price is very helpful!"</p><div class="testimonial-author"><div class="author-avatar">SK</div><div><strong>Sneha Kapoor</strong><br/><small>CS Student</small></div></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="sidebar-card"><h4>Skills You'll Gain</h4><div><span class="skill-tag">C-Programming</span><span class="skill-tag">Pointers</span><span class="skill-tag">Memory Management</span><span class="skill-tag">Data Structures</span><span class="skill-tag">Debugging</span></div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-bottom" style="border-top:none;padding:32px 0;"><p>© 2025 Emobility System Lab. All Rights Reserved.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
