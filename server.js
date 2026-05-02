@@ -25,73 +25,42 @@ const paymentRoutes = require("./routes/paymentRoutes");
 const app = express();
 const PORT = process.env.PORT || 5050;
 
-// ✅ Connect DB (don’t crash if fails)
-connectDB().catch(err => {
-  console.error("MongoDB connection failed:", err.message);
-});
+// ======================
+// ✅ CONNECT DATABASE
+// ======================
+connectDB();
 
-// ✅ Security headers
+// ======================
+// ✅ MIDDLEWARE
+// ======================
+
+// Security
 app.use(
   helmet({
-    contentSecurityPolicy: {
-      directives: {
-        defaultSrc: ["'self'"],
-        scriptSrc: [
-          "'self'",
-          "'unsafe-inline'",
-          "https://checkout.razorpay.com",
-          "https://cdn.razorpay.com",
-          "https://cdnjs.cloudflare.com",
-        ],
-        styleSrc: [
-          "'self'",
-          "'unsafe-inline'",
-          "https://fonts.googleapis.com",
-          "https://cdnjs.cloudflare.com",
-        ],
-        fontSrc: [
-          "'self'",
-          "https://fonts.gstatic.com",
-          "https://cdnjs.cloudflare.com",
-        ],
-        imgSrc: [
-          "'self'",
-          "data:",
-          "https://*.razorpay.com",
-          "https://cdn.razorpay.com",
-          "https://*.google.com",
-        ],
-        connectSrc: [
-          "'self'",
-          "https://api.razorpay.com",
-          "https://accounts.google.com",
-        ],
-        frameSrc: [
-          "'self'",
-          "https://api.razorpay.com",
-          "https://accounts.google.com",
-        ],
-      },
-    },
+    contentSecurityPolicy: false,
   })
 );
 
-// ✅ Middleware
+// CORS
 app.use(cors());
-app.use(express.json({ limit: "10kb" }));
+
+// Body parsers (IMPORTANT)
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Security middlewares
 app.use(mongoSanitize());
 app.use(xss());
 app.use(hpp());
 
-// ✅ Rate limiter
+// Rate limiter
 const limiter = rateLimit({
   max: 100,
   windowMs: 60 * 60 * 1000,
-  message: "Too many requests, try again later",
 });
 app.use("/api", limiter);
 
-// ✅ Sessions
+// Sessions
 app.use(
   session({
     secret: process.env.SESSION_SECRET || "secret",
@@ -103,50 +72,54 @@ app.use(
   })
 );
 
-// ✅ Passport
+// Passport
 app.use(passport.initialize());
 app.use(passport.session());
 
-// ✅ Logger
+// ======================
+// ✅ ROUTES
+// ======================
+
+// Debug logger (IMPORTANT)
 app.use((req, res, next) => {
-  console.log(`${req.method} ${req.url}`);
+  console.log(req.method, req.url);
   next();
 });
 
-// ✅ API Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/forms", formRoutes);
 app.use("/api/payments", paymentRoutes);
 
-//
-// 🔥 IMPORTANT PART (FRONTEND FIX)
-//
-
-// ✅ Serve static files (HTML, CSS, JS)
-app.use(express.static(__dirname));
-
-// ✅ Handle Render health check
+// ======================
+// ✅ FIX RENDER HEALTH CHECK
+// ======================
 app.head("/", (req, res) => {
   res.status(200).end();
 });
 
-// ✅ Load homepage
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
-});
+// ======================
+// ✅ STATIC FILES
+// ======================
+app.use(express.static(path.join(__dirname)));
 
-// ✅ Catch-all route (important for navigation)
+// ======================
+// ✅ FRONTEND ROUTE
+// ======================
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-// ✅ Error handler
+// ======================
+// ✅ ERROR HANDLER
+// ======================
 app.use((err, req, res, next) => {
   console.error("ERROR:", err);
-  res.status(500).json({ message: "Something went wrong" });
+  res.status(500).json({ message: "Server Error" });
 });
 
-// ✅ Start server
+// ======================
+// ✅ START SERVER
+// ======================
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
