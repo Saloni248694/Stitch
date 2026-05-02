@@ -5,72 +5,66 @@ const ContactMessage = require("../models/ContactMessage");
 
 const router = express.Router();
 
-// Helper to handle validation errors
+// Validation helper
 const validate = (req, res, next) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
+    console.log("Validation Error:", errors.array());
     return res.status(400).json({ errors: errors.array() });
   }
   next();
 };
 
-// @route   POST /api/forms/hiring
-// @desc    Submit teacher application
+// ======================
+// ✅ HIRING FORM
+// ======================
 router.post(
   "/hiring",
   [
-    check("name", "Name is required").not().isEmpty().trim(),
-    check("email", "Please include a valid email").isEmail().normalizeEmail(),
-    check("phone", "Valid phone number is required").not().isEmpty().trim(),
-    check("expertise", "Expertise is required").not().isEmpty().trim(),
-    check("experience", "Experience details are required").not().isEmpty().trim(),
+    check("name").notEmpty(),
+    check("email").isEmail(),
+    check("phone").notEmpty(),
+    check("expertise").notEmpty(),
+    check("experience").notEmpty(),
   ],
   validate,
   async (req, res) => {
     try {
-      const { name, email, phone, expertise, linkedin, experience } = req.body;
-      const application = await TeacherApplication.create({
-        name,
-        email,
-        phone,
-        expertise,
-        linkedin,
-        experience,
-      });
-      res.status(201).json({ message: "Application submitted successfully" });
+      console.log("HIRING DATA:", req.body);
+
+      await TeacherApplication.create(req.body);
+
+      res.status(201).json({ message: "Application submitted" });
     } catch (error) {
-      console.error("Hiring form error:", error);
-      res.status(500).json({ message: "Server error during submission" });
+      console.error(error);
+      res.status(500).json({ message: "Server error" });
     }
   }
 );
 
-// @route   POST /api/forms/contact
-// @desc    Submit contact message
+// ======================
+// ✅ CONTACT FORM
+// ======================
 router.post(
   "/contact",
   [
-    check("name", "Name is required").not().isEmpty().trim(),
-    check("email", "Please include a valid email").isEmail().normalizeEmail(),
-    check("message", "Message is required").not().isEmpty().trim(),
+    check("name").notEmpty(),
+    check("email").isEmail(),
+    check("message").notEmpty(),
   ],
   validate,
   async (req, res) => {
     try {
-      const { name, email, subject, message } = req.body;
-      const contactMessage = await ContactMessage.create({
-        name,
-        email,
-        subject,
-        message,
-      });
-      res.status(201).json({ message: "Message sent successfully" });
+      console.log("CONTACT DATA:", req.body);
+
+      await ContactMessage.create(req.body);
+
+      res.status(201).json({ message: "Message sent" });
     } catch (error) {
-      console.error("Contact form error:", error);
-      res.status(500).json({ message: "Server error during submission" });
+      console.error(error);
+      res.status(500).json({ message: "Server error" });
     }
   }
 );
 
 module.exports = router;
-
