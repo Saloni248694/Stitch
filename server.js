@@ -28,7 +28,7 @@ const formRoutes = require("./routes/formRoutes");
 const paymentRoutes = require("./routes/paymentRoutes");
 
 const app = express();
-const PORT = Number(process.env.PORT) || 5000;
+const PORT = Number(process.env.PORT) || 5050;
 
 // Connect to MongoDB
 connectDB();
