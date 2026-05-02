@@ -1,462 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emobility System Lab – Innovating Smart Mobility</title>
-  <meta name="description" content="Emobility System Lab offers industry-focused e-learning courses in GenAI, Python, Embedded Systems and CSMS for students and professionals."/>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <ii8meta name="description"
+    content="Emobility System Lab offers industry-focused e-learning courses in GenAI, Python, Embedded Systems and CSMS for students and professionals." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="nav-logo">
-      <img src="assets/logo.png" alt="Emobility System Lab Logo" class="logo-img"/>
-      <span class="logo-text">Emobility System Lab</span>
-    </a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="courses.html">Courses</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="teachers-hiring.html">Teachers Hiring</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="nav-actions">
-      <a href="login.html" class="btn-outline">Login</a>
-      <a href="#" class="btn-primary btn-enroll-now" data-course-id="general-enrollment" data-price="5999">Enroll Now</a>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="Emobility System Lab Logo" class="logo-img" />
+        <span class="logo-text">Emobility System Lab</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="teachers-hiring.html">Teachers Hiring</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn-outline">Login</a>
+        <a href="#" class="btn-primary btn-enroll-now" data-course-id="general-enrollment" data-price="5999">Enroll
+          Now</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
+  </nav>
 
-<!-- HERO SECTION -->
-<section class="hero">
-  <div class="hero-content">
-    <div class="hero-text">
-      <div class="hero-badge"><i class="fas fa-bolt"></i> Smart Mobility Education</div>
-      <h1>Welcome to<br/><span class="gradient-text">Emobility System Lab</span></h1>
-      <p>Innovating the Future of Smart Mobility and set the stage for success. Industry-focused training in GenAI, Python, Embedded Systems &amp; CSMS.</p>
-      <div class="hero-buttons">
-        <a href="courses.html" class="btn-primary btn-lg"><i class="fas fa-play-circle"></i> Explore Courses</a>
-        <a href="#about" class="btn-ghost btn-lg"><i class="fas fa-info-circle"></i> Learn More</a>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge"><i class="fas fa-bolt"></i> Smart Mobility Education</div>
+        <h1>Welcome to<br /><span class="gradient-text">Emobility System Lab</span></h1>
+        <p>Innovating the Future of Smart Mobility and set the stage for success. Industry-focused training in GenAI,
+          Python, Embedded Systems &amp; CSMS.</p>
+        <div class="hero-buttons">
+          <a href="courses.html" class="btn-primary btn-lg"><i class="fas fa-play-circle"></i> Explore Courses</a>
+          <a href="#about" class="btn-ghost btn-lg"><i class="fas fa-info-circle"></i> Learn More</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">2500+</span><span class="stat-label">Students</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Courses</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">95%</span><span class="stat-label">Placement</span></div>
+        </div>
       </div>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-num">2500+</span><span class="stat-label">Students</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Courses</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">95%</span><span class="stat-label">Placement</span></div>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="hero-card-float card-1">
-        <i class="fas fa-brain"></i>
-        <span>GenAI</span>
-      </div>
-      <div class="hero-card-float card-2">
-        <i class="fab fa-python"></i>
-        <span>Python</span>
-      </div>
-      <div class="hero-card-float card-3">
-        <i class="fas fa-microchip"></i>
-        <span>Embedded</span>
-      </div>
-      <div class="hero-card-float card-4">
-        <i class="fas fa-charging-station"></i>
-        <span>CSMS</span>
-      </div>
-      <div class="hero-circle-bg"></div>
-      <img src="assets/hero-student.png" alt="Student learning" class="hero-img" onerror="this.style.display='none'"/>
-    </div>
-  </div>
-  <div class="hero-wave">
-    <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="#f8fafc"/>
-    </svg>
-  </div>
-</section>
-
-<!-- FEATURES SECTION -->
-<section class="features" id="features">
-  <div class="container">
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon teal"><i class="fas fa-industry"></i></div>
-        <h3>Industry-Focused Training</h3>
-        <p>Courses designed with industry experts to meet real-world demands in Embedded Systems, GenAI, and EV Charging Technology.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon blue"><i class="fas fa-tools"></i></div>
-        <h3>Hands-On Practical Sessions</h3>
-        <p>Access real hardware, development boards, and tools to build and test your own embedded and IoT projects.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon purple"><i class="fas fa-briefcase"></i></div>
-        <h3>Placement Support</h3>
-        <p>Resume-building guidance, interview preparation, and connections with core tech companies to land your first job.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon orange"><i class="fas fa-certificate"></i></div>
-        <h3>Certified Programs</h3>
-        <p>Earn industry-recognized certifications that validate your skills and accelerate your career growth.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- POPULAR COURSES -->
-<section class="popular-courses" id="courses-home">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-badge">Our Programs</div>
-      <h2>Popular <span class="gradient-text">Courses</span></h2>
-      <p>Transform your career with our expert-led, industry-aligned courses</p>
-    </div>
-    <div class="courses-grid">
-      <div class="course-card" onclick="location.href='course-genai.html'">
-        <div class="course-thumb genai-thumb">
+      <div class="hero-visual">
+        <div class="hero-card-float card-1">
           <i class="fas fa-brain"></i>
-          <div class="course-level">Beginner–Advanced</div>
+          <span>GenAI</span>
         </div>
-        <div class="course-body">
-          <div class="course-tags"><span class="tag">AI</span><span class="tag">Machine Learning</span></div>
-          <h3>Generative AI (GenAI)</h3>
-          <p>Master LLMs, prompt engineering, RAG pipelines and build real-world AI applications from scratch.</p>
-          <div class="course-meta">
-            <span><i class="fas fa-clock"></i> 3-4 months</span>
-            <span><i class="fas fa-user-graduate"></i> 450+ Students</span>
-          </div>
-          <a href="course-genai.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="course-card" onclick="location.href='course-python.html'">
-        <div class="course-thumb python-thumb">
+        <div class="hero-card-float card-2">
           <i class="fab fa-python"></i>
-          <div class="course-level">All Levels</div>
+          <span>Python</span>
         </div>
-        <div class="course-body">
-          <div class="course-tags"><span class="tag">Python</span><span class="tag">Programming</span></div>
-          <h3>Python Programming</h3>
-          <p>From basics to advanced — data structures, OOP, web scraping, automation and data science essentials.</p>
-          <div class="course-meta">
-            <span><i class="fas fa-clock"></i> 3-4 months</span>
-            <span><i class="fas fa-user-graduate"></i> 800+ Students</span>
-          </div>
-          <a href="course-python.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="course-card" onclick="location.href='course-embedded.html'">
-        <div class="course-thumb embedded-thumb">
+        <div class="hero-card-float card-3">
           <i class="fas fa-microchip"></i>
-          <div class="course-level">Intermediate</div>
+          <span>Embedded</span>
         </div>
-        <div class="course-body">
-          <div class="course-tags"><span class="tag">Embedded</span><span class="tag">IoT</span></div>
-          <h3>Embedded Systems</h3>
-          <p>Deep-dive into microcontrollers, RTOS, CAN Bus, PWM, and hands-on hardware programming.</p>
-          <div class="course-meta">
-            <span><i class="fas fa-clock"></i> 3-4 months</span>
-            <span><i class="fas fa-user-graduate"></i> 600+ Students</span>
-          </div>
-          <a href="course-embedded.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="course-card" onclick="location.href='course-csms.html'">
-        <div class="course-thumb csms-thumb">
+        <div class="hero-card-float card-4">
           <i class="fas fa-charging-station"></i>
-          <div class="course-level">Advanced</div>
+          <span>CSMS</span>
         </div>
-        <div class="course-body">
-          <div class="course-tags"><span class="tag">EV</span><span class="tag">OCPP</span></div>
-          <h3>CSMS – Charging Station Management</h3>
-          <p>Master EV charging infrastructure, OCPP protocol, AC/DC chargers and smart energy management systems.</p>
-          <div class="course-meta">
-            <span><i class="fas fa-clock"></i> 3-4 months</span>
-            <span><i class="fas fa-user-graduate"></i> 350+ Students</span>
-          </div>
-          <a href="course-csms.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-      
-      <div class="course-card" onclick="location.href='course-c.html'">
-        <div class="course-thumb c-thumb" style="background:linear-gradient(135deg, #1e3a8a, #3b82f6);display:flex;align-items:center;justify-content:center;color:white;font-size:48px;position:relative;height:180px;">
-          <i class="fas fa-code"></i>
-          <div class="course-level" style="position:absolute;bottom:12px;left:12px;background:rgba(0,0,0,0.5);color:white;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:600;">Basic</div>
-          <div style="position:absolute;top:12px;right:12px;background:#ef4444;color:white;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700;">TESTING: 1 Rs.</div>
-        </div>
-        <div class="course-body">
-          <div class="course-tags"><span class="tag">C</span><span class="tag">Programming</span></div>
-          <h3>C Programming</h3>
-          <p>Master the foundations of programming, pointers, and memory management for ₹1.</p>
-          <div class="course-meta">
-            <span><i class="fas fa-clock"></i> 3-4 months</span>
-            <span><i class="fas fa-user-graduate"></i> 450+ Students</span>
-          </div>
-          <a href="course-c.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
-        </div>
+        <div class="hero-circle-bg"></div>
+        <img src="assets/hero-student.png" alt="Student learning" class="hero-img"
+          onerror="this.style.display='none'" />
       </div>
     </div>
-    <div class="courses-cta">
-      <a href="courses.html" class="btn-primary btn-lg">View All Courses <i class="fas fa-arrow-right"></i></a>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="#f8fafc" />
+      </svg>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ABOUT SECTION -->
-<section class="about-section" id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-text">
-        <div class="section-badge">Who We Are</div>
-        <h2>Emobility System Lab is a specialized<br/><span class="gradient-text">Training &amp; Development Center</span></h2>
-        <p>Focused on empowering students and professionals in core technology domains of Embedded Systems, IoT, GenAI, Python, and EV Charger Technology.</p>
-        <ul class="about-list">
-          <li><i class="fas fa-tools"></i> Hands-on Training with Real Hardware</li>
-          <li><i class="fas fa-chart-line"></i> Real-time Project Experience</li>
-          <li><i class="fas fa-graduation-cap"></i> Industry-Relevant Curriculum</li>
-          <li><i class="fas fa-handshake"></i> Placement Assistance &amp; Support</li>
-          <li><i class="fas fa-certificate"></i> Industry-Recognized Certificates</li>
-        </ul>
-        <a href="courses.html" class="btn-primary">Explore More <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="about-visual">
-        <div class="about-stat-grid">
-          <div class="about-stat-card teal-bg">
-            <i class="fas fa-users"></i>
-            <h4>2500+</h4>
-            <p>Active Students</p>
-          </div>
-          <div class="about-stat-card blue-bg">
-            <i class="fas fa-book-open"></i>
-            <h4>15+</h4>
-            <p>Expert Courses</p>
-          </div>
-          <div class="about-stat-card purple-bg">
-            <i class="fas fa-trophy"></i>
-            <h4>95%</h4>
-            <p>Placement Rate</p>
-          </div>
-          <div class="about-stat-card orange-bg">
-            <i class="fas fa-star"></i>
-            <h4>4.8★</h4>
-            <p>Student Rating</p>
-          </div>
+  <!-- FEATURES SECTION -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon teal"><i class="fas fa-industry"></i></div>
+          <h3>Industry-Focused Training</h3>
+          <p>Courses designed with industry experts to meet real-world demands in Embedded Systems, GenAI, and EV
+            Charging Technology.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon blue"><i class="fas fa-tools"></i></div>
+          <h3>Hands-On Practical Sessions</h3>
+          <p>Access real hardware, development boards, and tools to build and test your own embedded and IoT projects.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon purple"><i class="fas fa-briefcase"></i></div>
+          <h3>Placement Support</h3>
+          <p>Resume-building guidance, interview preparation, and connections with core tech companies to land your
+            first job.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon orange"><i class="fas fa-certificate"></i></div>
+          <h3>Certified Programs</h3>
+          <p>Earn industry-recognized certifications that validate your skills and accelerate your career growth.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-badge">Student Reviews</div>
-      <h2>What Our <span class="gradient-text">Students Say</span></h2>
-    </div>
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p>"The Embedded Systems course transformed my understanding. The hands-on approach with real hardware was invaluable. Got placed in 3 months!"</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">AK</div>
-          <div><strong>Arjun Kumar</strong><br/><small>Embedded Systems Graduate</small></div>
-        </div>
+  <!-- POPULAR COURSES -->
+  <section class="popular-courses" id="courses-home">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Our Programs</div>
+        <h2>Popular <span class="gradient-text">Courses</span></h2>
+        <p>Transform your career with our expert-led, industry-aligned courses</p>
       </div>
-      <div class="testimonial-card">
-        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p>"The GenAI course is incredible! I went from zero knowledge to building LLM apps in weeks. The instructors are top-notch industry professionals."</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">PS</div>
-          <div><strong>Priya Sharma</strong><br/><small>GenAI Program Graduate</small></div>
+      <div class="courses-grid">
+        <div class="course-card" onclick="location.href='course-genai.html'">
+          <div class="course-thumb genai-thumb">
+            <i class="fas fa-brain"></i>
+            <div class="course-level">Beginner–Advanced</div>
+          </div>
+          <div class="course-body">
+            <div class="course-tags"><span class="tag">AI</span><span class="tag">Machine Learning</span></div>
+            <h3>Generative AI (GenAI)</h3>
+            <p>Master LLMs, prompt engineering, RAG pipelines and build real-world AI applications from scratch.</p>
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 3-4 months</span>
+              <span><i class="fas fa-user-graduate"></i> 450+ Students</span>
+            </div>
+            <a href="course-genai.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
-      </div>
-      <div class="testimonial-card">
-        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-        <p>"CSMS course gave me a complete understanding of EV charging infrastructure. Now working at a leading EV company!"</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">RM</div>
-          <div><strong>Rahul Mishra</strong><br/><small>CSMS Program Graduate</small></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
+        <div class="course-card" onclick="location.href='course-python.html'">
+          <div class="course-thumb python-thumb">
+            <i class="fab fa-python"></i>
+            <div class="course-level">All Levels</div>
+          </div>
+          <div class="course-body">
+            <div class="course-tags"><span class="tag">Python</span><span class="tag">Programming</span></div>
+            <h3>Python Programming</h3>
+            <p>From basics to advanced — data structures, OOP, web scraping, automation and data science essentials.</p>
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 3-4 months</span>
+              <span><i class="fas fa-user-graduate"></i> 800+ Students</span>
+            </div>
+            <a href="course-python.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
 
-<!-- TEAM SECTION -->
-<section class="team-section" id="team">
-  <div class="container">
-    <div class="team-header">
-      <div class="section-badge">Leadership Team</div>
-      <h2>Meet Our <span class="gradient-text">Founders</span></h2>
-      <p>Driving innovation and excellence in the smart mobility ecosystem.</p>
+        <div class="course-card" onclick="location.href='course-embedded.html'">
+          <div class="course-thumb embedded-thumb">
+            <i class="fas fa-microchip"></i>
+            <div class="course-level">Intermediate</div>
+          </div>
+          <div class="course-body">
+            <div class="course-tags"><span class="tag">Embedded</span><span class="tag">IoT</span></div>
+            <h3>Embedded Systems</h3>
+            <p>Deep-dive into microcontrollers, RTOS, CAN Bus, PWM, and hands-on hardware programming.</p>
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 3-4 months</span>
+              <span><i class="fas fa-user-graduate"></i> 600+ Students</span>
+            </div>
+            <a href="course-embedded.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="course-card" onclick="location.href='course-csms.html'">
+          <div class="course-thumb csms-thumb">
+            <i class="fas fa-charging-station"></i>
+            <div class="course-level">Advanced</div>
+          </div>
+          <div class="course-body">
+            <div class="course-tags"><span class="tag">EV</span><span class="tag">OCPP</span></div>
+            <h3>CSMS – Charging Station Management</h3>
+            <p>Master EV charging infrastructure, OCPP protocol, AC/DC chargers and smart energy management systems.</p>
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 3-4 months</span>
+              <span><i class="fas fa-user-graduate"></i> 350+ Students</span>
+            </div>
+            <a href="course-csms.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="course-card" onclick="location.href='course-c.html'">
+          <div class="course-thumb c-thumb"
+            style="background:linear-gradient(135deg, #1e3a8a, #3b82f6);display:flex;align-items:center;justify-content:center;color:white;font-size:48px;position:relative;height:180px;">
+            <i class="fas fa-code"></i>
+            <div class="course-level"
+              style="position:absolute;bottom:12px;left:12px;background:rgba(0,0,0,0.5);color:white;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:600;">
+              Basic</div>
+            <div
+              style="position:absolute;top:12px;right:12px;background:#ef4444;color:white;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700;">
+              TESTING: 1 Rs.</div>
+          </div>
+          <div class="course-body">
+            <div class="course-tags"><span class="tag">C</span><span class="tag">Programming</span></div>
+            <h3>C Programming</h3>
+            <p>Master the foundations of programming, pointers, and memory management for ₹1.</p>
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 3-4 months</span>
+              <span><i class="fas fa-user-graduate"></i> 450+ Students</span>
+            </div>
+            <a href="course-c.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="courses-cta">
+        <a href="courses.html" class="btn-primary btn-lg">View All Courses <i class="fas fa-arrow-right"></i></a>
+      </div>
     </div>
-    <div class="team-grid">
-      <!-- Raunak Rajawat -->
-      <div class="team-card">
-        <div class="founder-avatar">RR</div>
-        <div class="team-info">
-          <h3>Raunak Rajawat</h3>
-          <div class="team-role"><i class="fas fa-crown"></i> Founder & CEO</div>
-          <ul class="team-responsibilities">
-            <li><i class="fas fa-check"></i> Visionary leadership & strategic direction</li>
-            <li><i class="fas fa-check"></i> Steering the future of smart mobility</li>
-            <li><i class="fas fa-check"></i> Overseeing overall center development</li>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-badge">Who We Are</div>
+          <h2>Emobility System Lab is a specialized<br /><span class="gradient-text">Training &amp; Development
+              Center</span></h2>
+          <p>Focused on empowering students and professionals in core technology domains of Embedded Systems, IoT,
+            GenAI, Python, and EV Charger Technology.</p>
+          <ul class="about-list">
+            <li><i class="fas fa-tools"></i> Hands-on Training with Real Hardware</li>
+            <li><i class="fas fa-chart-line"></i> Real-time Project Experience</li>
+            <li><i class="fas fa-graduation-cap"></i> Industry-Relevant Curriculum</li>
+            <li><i class="fas fa-handshake"></i> Placement Assistance &amp; Support</li>
+            <li><i class="fas fa-certificate"></i> Industry-Recognized Certificates</li>
           </ul>
+          <a href="courses.html" class="btn-primary">Explore More <i class="fas fa-arrow-right"></i></a>
         </div>
-      </div>
-
-      <!-- Abhishek Singh Sikarwar -->
-      <div class="team-card">
-        <div class="founder-avatar">AS</div>
-        <div class="team-info">
-          <h3>Abhishek Singh Sikarwar</h3>
-          <div class="team-role"><i class="fas fa-chart-line"></i> Co-Founder (Business & Growth)</div>
-          <ul class="team-responsibilities">
-            <li><i class="fas fa-check"></i> Leads sales & client acquisition</li>
-            <li><i class="fas fa-check"></i> Builds partnerships with EV companies</li>
-            <li><i class="fas fa-check"></i> Handles revenue, pricing & business strategy</li>
-            <li><i class="fas fa-check"></i> Manages marketing & expansion</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Saloni Singh Gour -->
-      <div class="team-card">
-        <div class="founder-avatar">SS</div>
-        <div class="team-info">
-          <h3>Saloni Singh Gour</h3>
-          <div class="team-role"><i class="fas fa-cog"></i> Co-Founder (Technical & Operations)</div>
-          <ul class="team-responsibilities">
-            <li><i class="fas fa-check"></i> Manages product development & execution</li>
-            <li><i class="fas fa-check"></i> Oversees hardware/software integration</li>
-            <li><i class="fas fa-check"></i> Handles deployment, testing & maintenance</li>
-            <li><i class="fas fa-check"></i> Controls operations & vendor coordination</li>
-          </ul>
+        <div class="about-visual">
+          <div class="about-stat-grid">
+            <div class="about-stat-card teal-bg">
+              <i class="fas fa-users"></i>
+              <h4>2500+</h4>
+              <p>Active Students</p>
+            </div>
+            <div class="about-stat-card blue-bg">
+              <i class="fas fa-book-open"></i>
+              <h4>15+</h4>
+              <p>Expert Courses</p>
+            </div>
+            <div class="about-stat-card purple-bg">
+              <i class="fas fa-trophy"></i>
+              <h4>95%</h4>
+              <p>Placement Rate</p>
+            </div>
+            <div class="about-stat-card orange-bg">
+              <i class="fas fa-star"></i>
+              <h4>4.8★</h4>
+              <p>Student Rating</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CONTACT SECTION -->
-<section class="contact-section" id="contact">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-badge">Get In Touch</div>
-      <h2>Contact <span class="gradient-text">Us</span></h2>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <div class="contact-item">
-          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-          <div><strong>Location</strong><p>Gwalior, Madhya Pradesh, India</p></div>
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Student Reviews</div>
+        <h2>What Our <span class="gradient-text">Students Say</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"The Embedded Systems course transformed my understanding. The hands-on approach with real hardware was
+            invaluable. Got placed in 3 months!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AK</div>
+            <div><strong>Arjun Kumar</strong><br /><small>Embedded Systems Graduate</small></div>
+          </div>
         </div>
         <div class="contact-item">
           <div class="contact-icon"><i class="fas fa-phone"></i></div>
-          <div><strong>Phone</strong><p>+91-7999346783</p><p>+91-7011645976</p></div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-          <div><strong>Email</strong><p>hr@emobilitysystemslab.in</p></div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon"><i class="fas fa-question-circle"></i></div>
-          <div><strong>Inquiry</strong><p>info@emobilitysystemslab.in</p></div>
-        </div>
-        <div class="social-links">
-          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-      <form class="contact-form" onsubmit="handleContactForm(event)">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Your Name" required/>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="your@email.com" required/>
+          <div><strong>Phone</strong>
+            <p>+91-7999346783</p>
+            <p>+91-7011645976</p>
           </div>
         </div>
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" placeholder="Course Inquiry"/>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+          <p>"CSMS course gave me a complete understanding of EV charging infrastructure. Now working at a leading EV
+            company!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RM</div>
+            <div><strong>Rahul Mishra</strong><br /><small>CSMS Program Graduate</small></div>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" rows="5" placeholder="Your message here..." required></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TEAM SECTION -->
+  <section class="team-section" id="team">
+    <div class="container">
+      <div class="team-header">
+        <div class="section-badge">Leadership Team</div>
+        <h2>Meet Our <span class="gradient-text">Founders</span></h2>
+        <p>Driving innovation and excellence in the smart mobility ecosystem.</p>
+      </div>
+      <div class="team-grid">
+        <!-- Raunak Rajawat -->
+        <div class="team-card">
+          <div class="founder-avatar">RJ</div>
+          <div class="team-info">
+            <h3>Raunak Rajawat</h3>
+            <div class="team-role"><i class="fas fa-crown"></i> Founder & CEO</div>
+            <ul class="team-responsibilities">
+              <li><i class="fas fa-check"></i> Visionary leadership & strategic direction</li>
+              <li><i class="fas fa-check"></i> Steering the future of smart mobility</li>
+              <li><i class="fas fa-check"></i> Overseeing overall center development</li>
+            </ul>
+          </div>
         </div>
-        <button type="submit" class="btn-primary btn-full">Send Message <i class="fas fa-paper-plane"></i></button>
-      </form>
-    </div>
-  </div>
-</section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo">
-          <img src="assets/logo.png" alt="Logo" class="logo-img" style="width:40px;height:40px;"/>
-          <span class="logo-text">Emobility System Lab</span>
-        </a>
-        <p>Innovating the Future of Smart Mobility. Empowering the next generation of technology professionals.</p>
-      </div>
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4>Our Courses</h4>
-        <ul>
-          <li><a href="course-genai.html">Generative AI</a></li>
-          <li><a href="course-python.html">Python Programming</a></li>
-          <li><a href="course-embedded.html">Embedded Systems</a></li>
-          <li><a href="course-csms.html">CSMS</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4>Contact</h4>
-        <ul>
-          <li><i class="fas fa-phone"></i> +91-7999346783</li>
-          <li><i class="fas fa-envelope"></i> hr@emobilitysystemslab.in</li>
-          <li><i class="fas fa-map-marker-alt"></i> Gwalior, MP, India</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Emobility System Lab. All Rights Reserved.</p>
-      <div class="footer-social">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-    </div>
-  </div>
-</footer>
+        <!-- Abhishek Sikarwar -->
+        <div class="team-card">
+          <div class="founder-avatar">AS</div>
+          <div class="team-info">
+            <h3>Abhishek Sikarwar</h3>
+            <div class="team-role"><i class="fas fa-chart-line"></i> Co-Founder (Business & Growth)</div>
+            <ul class="team-responsibilities">
+              <li><i class="fas fa-check"></i> Leads sales & client acquisition</li>
+              <li><i class="fas fa-check"></i> Builds partnerships with EV companies</li>
+              <li><i class="fas fa-check"></i> Handles revenue, pricing & business strategy</li>
+              <li><i class="fas fa-check"></i> Manages marketing & expansion</li>
+            </ul>
+          </div>
+        </div>
 
-<script src="js/main.js"></script>
+        <!-- Saloni Singh Gour -->
+        <div class="team-card">
+          <div class="founder-avatar">SS</div>
+          <div class="team-info">
+            <h3>Saloni Singh Gour</h3>
+            <div class="team-role"><i class="fas fa-cog"></i> Co-Founder (Technical & Operations)</div>
+            <ul class="team-responsibilities">
+              <li><i class="fas fa-check"></i> Manages product development & execution</li>
+              <li><i class="fas fa-check"></i> Oversees hardware/software integration</li>
+              <li><i class="fas fa-check"></i> Handles deployment, testing & maintenance</li>
+              <li><i class="fas fa-check"></i> Controls operations & vendor coordination</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Get In Touch</div>
+        <h2>Contact <span class="gradient-text">Us</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><strong>Location</strong>
+              <p>Gwalior, Madhya Pradesh, India</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div><strong>Phone</strong>
+              <p>+91-7999346783</p>
+              <p>+91-7011645976</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div><strong>Email</strong>
+              <p>hr@emobilitysystemslab.in</p>
+              <p>emobilitysystemlab@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-question-circle"></i></div>
+            <div><strong>Inquiry</strong>
+              <p>info@emobilitysystemslab.in</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleContactForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Course Inquiry" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="assets/logo.png" alt="Logo" class="logo-img" style="width:40px;height:40px;" />
+            <span class="logo-text">Emobility System Lab</span>
+          </a>
+          <p>Innovating the Future of Smart Mobility. Empowering the next generation of technology professionals.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Our Courses</h4>
+          <ul>
+            <li><a href="course-genai.html">Generative AI</a></li>
+            <li><a href="course-python.html">Python Programming</a></li>
+            <li><a href="course-embedded.html">Embedded Systems</a></li>
+            <li><a href="course-csms.html">CSMS</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fas fa-phone"></i> +91-7999346783</li>
+            <li><i class="fas fa-envelope"></i> hr@emobilitysystemslab.in</li>
+            <li><i class="fas fa-map-marker-alt"></i> Gwalior, MP, India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Emobility System Lab. All Rights Reserved.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>

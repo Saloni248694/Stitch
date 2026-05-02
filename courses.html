@@ -1,241 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>All Courses – Emobility System Lab</title>
-  <meta name="description" content="Browse all courses at Emobility System Lab including GenAI, Python, Embedded Systems and CSMS."/>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <meta name="description"
+    content="Browse all courses at Emobility System Lab including GenAI, Python, Embedded Systems and CSMS." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar" id="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="nav-logo">
-      <img src="assets/logo.png" alt="Logo" class="logo-img"/>
-      <span class="logo-text">Emobility System Lab</span>
-    </a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="courses.html" class="active">Courses</a></li>
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="teachers-hiring.html">Teachers Hiring</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
-    <div class="nav-actions">
-      <a href="login.html" class="btn-outline">Login</a>
-      <a href="#" class="btn-primary btn-enroll-now" data-course-id="general-enrollment" data-price="5999">Enroll Now</a>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="Logo" class="logo-img" />
+        <span class="logo-text">Emobility System Lab</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html" class="active">Courses</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="teachers-hiring.html">Teachers Hiring</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn-outline">Login</a>
+        <a href="#" class="btn-primary btn-enroll-now" data-course-id="general-enrollment" data-price="5999">Enroll
+          Now</a>
+      </div>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
     </div>
-    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-  </div>
-</nav>
+  </nav>
 
-<div class="page-hero">
-  <div style="position:relative;z-index:1;">
-    <div class="section-badge" style="margin:0 auto 16px;">Our Programs</div>
-    <h1>All <span class="gradient-text">Courses</span></h1>
-    <p>Industry-aligned courses taught by expert practitioners. From AI to Embedded Systems — launch your career today.</p>
-  </div>
-</div>
-
-<div class="courses-page-grid">
-  <div class="container">
-    <div class="courses-filter">
-      <button class="filter-btn active" data-filter="all">All Courses</button>
-      <button class="filter-btn" data-filter="ai">AI & ML</button>
-      <button class="filter-btn" data-filter="programming">Programming</button>
-      <button class="filter-btn" data-filter="hardware">Hardware & IoT</button>
-      <button class="filter-btn" data-filter="ev">EV & Charging</button>
-    </div>
-    <div class="all-courses-grid">
-
-      <div class="course-card" data-category="ai" onclick="location.href='course-genai.html'">
-        <div class="course-thumb genai-thumb">
-          <i class="fas fa-brain"></i>
-          <div class="course-level">Beginner–Advanced</div>
-        </div>
-        <div class="course-body">
-          <div class="course-tags"><span class="tag">AI</span><span class="tag">LLMs</span><span class="tag">Prompt Eng.</span></div>
-          <h3>Generative AI (GenAI) Masterclass</h3>
-          <p>LLMs, RAG, Agents, LangChain and production AI deployments from scratch.</p>
-          <div class="course-meta">
-            <span><i class="fas fa-clock"></i> 3-4 months</span>
-            <span><i class="fas fa-user-graduate"></i> 452 Students</span>
-            <span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.9</span>
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:center;">
-            <strong style="color:#0d9488;font-size:1.1rem;">5999 Rs.</strong>
-            <a href="course-genai.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="course-card" data-category="programming" onclick="location.href='course-python.html'">
-        <div class="course-thumb python-thumb">
-          <i class="fab fa-python"></i>
-          <div class="course-level">All Levels</div>
-        </div>
-        <div class="course-body">
-          <div class="course-tags"><span class="tag">Python</span><span class="tag">Data Science</span><span class="tag">Automation</span></div>
-          <h3>Python Programming – Basics to Advanced</h3>
-          <p>Comprehensive Python covering OOP, Pandas, APIs, web scraping and automation.</p>
-          <div class="course-meta">
-            <span><i class="fas fa-clock"></i> 3-4 months</span>
-            <span><i class="fas fa-user-graduate"></i> 820 Students</span>
-            <span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.8</span>
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:center;">
-            <strong style="color:#0d9488;font-size:1.1rem;">5999 Rs.</strong>
-            <a href="course-python.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="course-card" data-category="programming" onclick="location.href='course-c.html'">
-        <div class="course-thumb c-thumb" style="background:linear-gradient(135deg, #1e3a8a, #3b82f6);display:flex;align-items:center;justify-content:center;color:white;font-size:48px;position:relative;">
-          <i class="fas fa-code"></i>
-          <div class="course-level" style="position:absolute;bottom:12px;left:12px;background:rgba(0,0,0,0.5);color:white;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:600;">Basic</div>
-          <div style="position:absolute;top:12px;right:12px;background:#ef4444;color:white;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700;">TESTING: 1 Rs.</div>
-        </div>
-        <div class="course-body">
-          <div class="course-tags"><span class="tag">C</span><span class="tag">Programming</span><span class="tag">Pointers</span></div>
-          <h3>C Programming – Foundations</h3>
-          <p>Master the basics, memory management, and pointers for ₹1.</p>
-          <div class="course-meta">
-            <span><i class="fas fa-clock"></i> 3-4 months</span>
-            <span><i class="fas fa-user-graduate"></i> 450 Students</span>
-            <span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.9</span>
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:center;">
-            <strong style="color:#0d9488;font-size:1.1rem;">1 Rs.</strong>
-            <a href="course-c.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="course-card" data-category="hardware" onclick="location.href='course-embedded.html'">
-        <div class="course-thumb embedded-thumb">
-          <i class="fas fa-microchip"></i>
-          <div class="course-level">Intermediate</div>
-        </div>
-        <div class="course-body">
-          <div class="course-tags"><span class="tag">Embedded C</span><span class="tag">RTOS</span><span class="tag">CAN Bus</span></div>
-          <h3>Master Embedded Systems</h3>
-          <p>ARM Cortex-M, FreeRTOS, CAN, SPI, I2C and automotive AUTOSAR with real hardware.</p>
-          <div class="course-meta">
-            <span><i class="fas fa-clock"></i> 3-4 months</span>
-            <span><i class="fas fa-user-graduate"></i> 625 Students</span>
-            <span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.9</span>
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:center;">
-            <strong style="color:#0d9488;font-size:1.1rem;">5999 Rs.</strong>
-            <a href="course-embedded.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="course-card" data-category="ev" onclick="location.href='course-csms.html'">
-        <div class="course-thumb csms-thumb">
-          <i class="fas fa-charging-station"></i>
-          <div class="course-level">Advanced</div>
-        </div>
-        <div class="course-body">
-          <div class="course-tags"><span class="tag">OCPP</span><span class="tag">EV Charging</span><span class="tag">V2G</span></div>
-          <h3>CSMS – Charging Station Management</h3>
-          <p>OCPP 1.6/2.0.1, smart charging, CSMS backend development and EV hardware.</p>
-          <div class="course-meta">
-            <span><i class="fas fa-clock"></i> 3-4 months</span>
-            <span><i class="fas fa-user-graduate"></i> 360 Students</span>
-            <span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.9</span>
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:center;">
-            <strong style="color:#0d9488;font-size:1.1rem;">5999 Rs.</strong>
-            <a href="course-csms.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="course-card" data-category="hardware" onclick="">
-        <div class="course-thumb" style="background:linear-gradient(135deg,#065f46,#047857);">
-          <i class="fas fa-network-wired" style="font-size:3.5rem;color:white;"></i>
-          <div class="course-level">Intermediate</div>
-        </div>
-        <div class="course-body">
-          <div class="course-tags"><span class="tag">IoT</span><span class="tag">MQTT</span><span class="tag">AWS IoT</span></div>
-          <h3>IoT – Internet of Things</h3>
-          <p>End-to-end IoT solutions with MQTT, sensors, cloud platforms and edge computing.</p>
-          <div class="course-meta">
-            <span><i class="fas fa-clock"></i> 3-4 months</span>
-            <span><i class="fas fa-user-graduate"></i> 290 Students</span>
-            <span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.7</span>
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:center;">
-            <strong style="color:#0d9488;font-size:1.1rem;">5999 Rs.</strong>
-            <span class="course-btn" style="color:#64748b;gap:6px;cursor:default;">Coming Soon</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="course-card" data-category="ev" onclick="">
-        <div class="course-thumb" style="background:linear-gradient(135deg,#1e3a5f,#1e40af);">
-          <i class="fas fa-battery-three-quarters" style="font-size:3.5rem;color:white;"></i>
-          <div class="course-level">Advanced</div>
-        </div>
-        <div class="course-body">
-          <div class="course-tags"><span class="tag">BMS</span><span class="tag">Battery</span><span class="tag">EV</span></div>
-          <h3>Wireless BMS – Battery Management System</h3>
-          <p>Li-ion battery chemistry, BMS algorithms, SOC/SOH estimation and wireless battery systems.</p>
-          <div class="course-meta">
-            <span><i class="fas fa-clock"></i> 3-4 months</span>
-            <span><i class="fas fa-user-graduate"></i> 210 Students</span>
-            <span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.8</span>
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:center;">
-            <strong style="color:#0d9488;font-size:1.1rem;">5999 Rs.</strong>
-            <span class="course-btn" style="color:#64748b;gap:6px;cursor:default;">Coming Soon</span>
-          </div>
-        </div>
-      </div>
-
+  <div class="page-hero">
+    <div style="position:relative;z-index:1;">
+      <div class="section-badge" style="margin:0 auto 16px;">Our Programs</div>
+      <h1>All <span class="gradient-text">Courses</span></h1>
+      <p>Industry-aligned courses taught by expert practitioners. From AI to Embedded Systems — launch your career
+        today.</p>
     </div>
   </div>
-</div>
 
-<!-- ENROLL CTA BANNER -->
-<section style="padding:80px 24px;background:linear-gradient(135deg,#0f172a 0%,#0f2a4a 60%,#0f172a 100%);position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(13,148,136,0.25) 0%,transparent 65%);"></div>
-  <div style="max-width:700px;margin:0 auto;text-align:center;position:relative;z-index:1;">
-    <h2 style="font-size:2.2rem;font-weight:800;color:white;margin-bottom:16px;">Ready to Start Your Journey?</h2>
-    <p style="color:rgba(255,255,255,0.75);font-size:1.05rem;margin-bottom:32px;">Join 2500+ students and transform your career with industry-leading courses in smart mobility and cutting-edge technology.</p>
-    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-      <a href="#" class="btn-primary btn-lg btn-enroll-now" data-course-id="general-enrollment" data-price="5999">Enroll Now <i class="fas fa-rocket"></i></a>
-      <a href="index.html#contact" class="btn-ghost btn-lg">Talk to Us <i class="fas fa-comments"></i></a>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo">
-          <img src="assets/logo.png" alt="Logo" class="logo-img" style="width:40px;height:40px;"/>
-          <span class="logo-text">Emobility System Lab</span>
-        </a>
-        <p>Innovating the Future of Smart Mobility. Empowering technology professionals.</p>
+  <div class="courses-page-grid">
+    <div class="container">
+      <div class="courses-filter">
+        <button class="filter-btn active" data-filter="all">All Courses</button>
+        <button class="filter-btn" data-filter="ai">AI & ML</button>
+        <button class="filter-btn" data-filter="programming">Programming</button>
+        <button class="filter-btn" data-filter="hardware">Hardware & IoT</button>
+        <button class="filter-btn" data-filter="ev">EV & Charging</button>
       </div>
-      <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="courses.html">Courses</a></li><li><a href="index.html#about">About</a></li><li><a href="login.html">Login</a></li></ul></div>
-      <div class="footer-links"><h4>Our Courses</h4><ul><li><a href="course-genai.html">Generative AI</a></li><li><a href="course-python.html">Python Programming</a></li><li><a href="course-embedded.html">Embedded Systems</a></li><li><a href="course-csms.html">CSMS</a></li></ul></div>
-      <div class="footer-links"><h4>Contact</h4><ul><li><i class="fas fa-phone"></i> +91-7999346783</li><li><i class="fas fa-envelope"></i> hr@emobilitysystemslab.in</li><li><i class="fas fa-map-marker-alt"></i> Gwalior, MP, India</li></ul></div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Emobility System Lab. All Rights Reserved.</p>
-      <div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+      <div class="all-courses-grid">
+
+        <div class="course-card" data-category="ai" onclick="location.href='course-genai.html'">
+          <div class="course-thumb genai-thumb">
+            <i class="fas fa-brain"></i>
+            <div class="course-level">Beginner–Advanced</div>
+          </div>
+          <div class="course-body">
+            <div class="course-tags"><span class="tag">AI</span><span class="tag">LLMs</span><span class="tag">Prompt
+                Eng.</span></div>
+            <h3>Generative AI (GenAI) Masterclass</h3>
+            <p>LLMs, RAG, Agents, LangChain and production AI deployments from scratch.</p>
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 3-4 months</span>
+              <span><i class="fas fa-user-graduate"></i> 452 Students</span>
+              <span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.9</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <strong style="color:#0d9488;font-size:1.1rem;">4999 Rs.</strong>
+              <a href="course-genai.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card" data-category="programming" onclick="location.href='course-python.html'">
+          <div class="course-thumb python-thumb">
+            <i class="fab fa-python"></i>
+            <div class="course-level">All Levels</div>
+          </div>
+          <div class="course-body">
+            <div class="course-tags"><span class="tag">Python</span><span class="tag">Data Science</span><span
+                class="tag">Automation</span></div>
+            <h3>Python Programming – Basics to Advanced</h3>
+            <p>Comprehensive Python covering OOP, Pandas, APIs, web scraping and automation.</p>
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 3-4 months</span>
+              <span><i class="fas fa-user-graduate"></i> 820 Students</span>
+              <span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.8</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <strong style="color:#0d9488;font-size:1.1rem;">2999 Rs.</strong>
+              <a href="course-python.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card" data-category="programming" onclick="location.href='course-c.html'">
+          <div class="course-thumb c-thumb"
+            style="background:linear-gradient(135deg, #1e3a8a, #3b82f6);display:flex;align-items:center;justify-content:center;color:white;font-size:48px;position:relative;">
+            <i class="fas fa-code"></i>
+            <div class="course-level"
+              style="position:absolute;bottom:12px;left:12px;background:rgba(0,0,0,0.5);color:white;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:600;">
+              Basic</div>
+            <div
+              style="position:absolute;top:12px;right:12px;background:#ef4444;color:white;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700;">
+              TESTING: 1 Rs.</div>
+          </div>
+          <div class="course-body">
+            <div class="course-tags"><span class="tag">C</span><span class="tag">Programming</span><span
+                class="tag">Pointers</span></div>
+            <h3>C Programming – Foundations</h3>
+            <p>Master the basics, memory management, and pointers for ₹1.</p>
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 3-4 months</span>
+              <span><i class="fas fa-user-graduate"></i> 450 Students</span>
+              <span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.9</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <strong style="color:#0d9488;font-size:1.1rem;">2999 Rs.</strong>
+              <a href="course-c.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="course-card" data-category="hardware" onclick="location.href='course-embedded.html'">
+          <div class="course-thumb embedded-thumb">
+            <i class="fas fa-microchip"></i>
+            <div class="course-level">Intermediate</div>
+          </div>
+          <div class="course-body">
+            <div class="course-tags"><span class="tag">Embedded C</span><span class="tag">RTOS</span><span
+                class="tag">CAN Bus</span></div>
+            <h3>Master Embedded Systems</h3>
+            <p>ARM Cortex-M, FreeRTOS, CAN, SPI, I2C and automotive AUTOSAR with real hardware.</p>
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 3-4 months</span>
+              <span><i class="fas fa-user-graduate"></i> 625 Students</span>
+              <span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.9</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <strong style="color:#0d9488;font-size:1.1rem;">4999 Rs.</strong>
+              <a href="course-embedded.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card" data-category="ev" onclick="location.href='course-csms.html'">
+          <div class="course-thumb csms-thumb">
+            <i class="fas fa-charging-station"></i>
+            <div class="course-level">Advanced</div>
+          </div>
+          <div class="course-body">
+            <div class="course-tags"><span class="tag">OCPP</span><span class="tag">EV Charging</span><span
+                class="tag">V2G</span></div>
+            <h3>CSMS – Charging Station Management</h3>
+            <p>OCPP 1.6/2.0.1, smart charging, CSMS backend development and EV hardware.</p>
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 3-4 months</span>
+              <span><i class="fas fa-user-graduate"></i> 360 Students</span>
+              <span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.9</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <strong style="color:#0d9488;font-size:1.1rem;">4999 Rs.</strong>
+              <a href="course-csms.html" class="course-btn">View Course <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card" data-category="hardware" onclick="">
+          <div class="course-thumb" style="background:linear-gradient(135deg,#065f46,#047857);">
+            <i class="fas fa-network-wired" style="font-size:3.5rem;color:white;"></i>
+            <div class="course-level">Intermediate</div>
+          </div>
+          <div class="course-body">
+            <div class="course-tags"><span class="tag">IoT</span><span class="tag">MQTT</span><span class="tag">AWS
+                IoT</span></div>
+            <h3>IoT – Internet of Things</h3>
+            <p>End-to-end IoT solutions with MQTT, sensors, cloud platforms and edge computing.</p>
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 3-4 months</span>
+              <span><i class="fas fa-user-graduate"></i> 290 Students</span>
+              <span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.7</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <strong style="color:#0d9488;font-size:1.1rem;">4999 Rs.</strong>
+              <span class="course-btn" style="color:#64748b;gap:6px;cursor:default;">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card" data-category="ev" onclick="">
+          <div class="course-thumb" style="background:linear-gradient(135deg,#1e3a5f,#1e40af);">
+            <i class="fas fa-battery-three-quarters" style="font-size:3.5rem;color:white;"></i>
+            <div class="course-level">Advanced</div>
+          </div>
+          <div class="course-body">
+            <div class="course-tags"><span class="tag">BMS</span><span class="tag">Battery</span><span
+                class="tag">EV</span></div>
+            <h3>Wireless BMS – Battery Management System</h3>
+            <p>Li-ion battery chemistry, BMS algorithms, SOC/SOH estimation and wireless battery systems.</p>
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 3-4 months</span>
+              <span><i class="fas fa-user-graduate"></i> 210 Students</span>
+              <span><i class="fas fa-star" style="color:#f59e0b;"></i> 4.8</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <strong style="color:#0d9488;font-size:1.1rem;">4999 Rs.</strong>
+              <span class="course-btn" style="color:#64748b;gap:6px;cursor:default;">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
-</footer>
-<script src="js/main.js"></script>
+
+  <!-- ENROLL CTA BANNER -->
+  <section
+    style="padding:80px 24px;background:linear-gradient(135deg,#0f172a 0%,#0f2a4a 60%,#0f172a 100%);position:relative;overflow:hidden;">
+    <div
+      style="position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(13,148,136,0.25) 0%,transparent 65%);">
+    </div>
+    <div style="max-width:700px;margin:0 auto;text-align:center;position:relative;z-index:1;">
+      <h2 style="font-size:2.2rem;font-weight:800;color:white;margin-bottom:16px;">Ready to Start Your Journey?</h2>
+      <p style="color:rgba(255,255,255,0.75);font-size:1.05rem;margin-bottom:32px;">Join 2500+ students and transform
+        your career with industry-leading courses in smart mobility and cutting-edge technology.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="#" class="btn-primary btn-lg btn-enroll-now" data-course-id="general-enrollment"
+          data-price="5999">Enroll Now <i class="fas fa-rocket"></i></a>
+        <a href="index.html#contact" class="btn-ghost btn-lg">Talk to Us <i class="fas fa-comments"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="assets/logo.png" alt="Logo" class="logo-img" style="width:40px;height:40px;" />
+            <span class="logo-text">Emobility System Lab</span>
+          </a>
+          <p>Innovating the Future of Smart Mobility. Empowering technology professionals.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Our Courses</h4>
+          <ul>
+            <li><a href="course-genai.html">Generative AI</a></li>
+            <li><a href="course-python.html">Python Programming</a></li>
+            <li><a href="course-embedded.html">Embedded Systems</a></li>
+            <li><a href="course-csms.html">CSMS</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fas fa-phone"></i> +91-7999346783</li>
+            <li><i class="fas fa-envelope"></i> hr@emobilitysystemslab.in</li>
+            <li><i class="fas fa-map-marker-alt"></i> Gwalior, MP, India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Emobility System Lab. All Rights Reserved.</p>
+        <div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i
+              class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
