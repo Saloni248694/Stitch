@@ -25,7 +25,7 @@ const paymentRoutes = require("./routes/paymentRoutes");
 const app = express();
 const PORT = process.env.PORT || 5050;
 
-// ✅ Connect DB (DON’T crash server)
+// ✅ Connect DB (don’t crash if fails)
 connectDB().catch(err => {
   console.error("MongoDB connection failed:", err.message);
 });
@@ -118,20 +118,24 @@ app.use("/api/auth", authRoutes);
 app.use("/api/forms", formRoutes);
 app.use("/api/payments", paymentRoutes);
 
-// ✅ FIX: Handle Render health check
+//
+// 🔥 IMPORTANT PART (FRONTEND FIX)
+//
+
+// ✅ Serve static files (HTML, CSS, JS)
+app.use(express.static(__dirname));
+
+// ✅ Handle Render health check
 app.head("/", (req, res) => {
   res.status(200).end();
 });
 
-// ✅ Root route
+// ✅ Load homepage
 app.get("/", (req, res) => {
-  res.send("Server is running 🚀");
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
-// ✅ Static files
-app.use(express.static(path.join(__dirname)));
-
-// ✅ Catch-all (frontend)
+// ✅ Catch-all route (important for navigation)
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
